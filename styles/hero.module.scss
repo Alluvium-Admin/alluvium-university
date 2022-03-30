@@ -1,0 +1,98 @@
+.cover {
+  background: linear-gradient(
+    88.63deg,
+    rgba(0, 0, 0, 0.75) 30.22%,
+    rgba(0, 0, 0, 0) 64.36%
+  ), url(/images/smileyGuy.svg);
+  color: white;
+  display: flex;
+  padding: 4rem;
+  align-items: center;
+  height: 630px;
+  h1 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 80px;
+    color: #ffffff;
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  h2 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 45px;
+    // color: rgba(255, 255, 255, 0.95);
+    color: #00c5f7;
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  h3 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 35px;
+    color: rgba(255, 255, 255, 0.95);
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  .button {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #ffffff;
+    padding: 15px 16px;
+    width: 248px;
+    height: 54px;
+    margin-top: 3rem;
+    background: #009bc0;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+  }
+}
+.galleryViewer {
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 0px 1px;
+  // width: 100%;
+  height: 40px;
+  .slider {
+    // position: static;
+    // background-color: aquamarine;
+    // align-items: center;
+    // overflow: hidden;
+    // max-height: 100%;
+    animation: marquee 10s linear 0s infinite;
+    .sliderElems {
+      z-index: -3px;
+      // display: inline-flex;
+      //   height: 100px;
+    }
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0%, 10%);
+    // left: 0;
+  }
+  100% {
+    // left: -100%
+    transform: translate(0, -100%);
+  }
+}
+
+@-webkit-keyframes marquee {
+  0% {
+    transform: translate(0%, 0%);
+    // left: 0;
+  }
+  100% {
+    // left: -100%
+    transform: translate(0, -100%);
+  }
+}
