@@ -24,6 +24,9 @@
                 background-color: transparent;
                 // width: 30px;
                 color: #ffffff;
+                &:focus{
+                  outline: none;
+                }
             }
             ::placeholder{
                 color: #ffffff;
