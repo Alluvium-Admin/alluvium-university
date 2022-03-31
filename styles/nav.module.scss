@@ -3,6 +3,7 @@
     background: rgb(0, 41, 59);
     color: white;
     // display: flex;
+    width: 100%;
     // justify-content: end;
     padding: 1rem 0rem 1rem 1rem;
     // align-items: center;
@@ -72,6 +73,17 @@
     font-weight: 600 !important;
     font-size: 15px !important;
     margin-right: 40px !important;
+}
+
+.coverBottom{
+    font-family: "Montserrat";
+    // background: rgb(0, 41, 59);
+    // color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 7rem 1rem 1rem;
 }
   
   @keyframes marquee {

@@ -26,8 +26,8 @@ const Navigation: NextComponentType = () => {
         </ul>
       </Container>
       <Navbar className="w-100" collapseOnSelect expand="lg" variant="light">
-        <Container className="">
-          <Navbar.Brand href="#home">
+        <div className={styles.coverBottom}>
+          <Navbar.Brand href="#home" className="">
             <Image
               src="/images/AULogoWhite.svg"
               height={70}
@@ -85,7 +85,7 @@ const Navigation: NextComponentType = () => {
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
-        </Container>
+        </div>
       </Navbar>
     </>
   );
