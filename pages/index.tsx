@@ -5,6 +5,9 @@ import styles from "../styles/Home.module.css";
 import Hero from "../components/hero";
 import ShortCut from "../components/shortcut";
 import Navigation from "../components/nav";
+import Event from "../components/Event";
+import Testimony from "../components/Testimony";
+import Footer from "../components/Footer";
 
 const Home: NextPage = () => {
   return (
@@ -19,7 +22,10 @@ const Home: NextPage = () => {
         <Navigation />
         <Hero />
         <ShortCut />
+				<Event />
+				<Testimony />
       </main>
+      <Footer/>
     </div>
   );
 };
