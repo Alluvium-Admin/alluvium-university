@@ -9,44 +9,51 @@ const ShortCut: NextComponentType = () => {
     <>
       <Container fluid className={styles.cover}>
         <div className={styles.main}>
-          <div className="d-flex">
-            <Link href="">
-              <a className="text-center no-underline hover:no-underline">
-                <Image src="/images/loc.svg" height={40} width={40} alt="" />
+          <Link href="">
+            <a className="text-center no-underline hover:no-underline">
+              <div className={styles.contents}>
+                <Image src="/images/loc.svg" height={20} width={20} alt="" />
                 <p>Our Campus</p>
-              </a>
-            </Link>
-          </div>
-          <div className={styles.bar}>
-          </div>
-          <div className="d-flex">
-            <Link href="">
-              <a className="text-center no-underline">
-                <Image src="/images/courses.svg" height={40} width={80} alt="" />
+              </div>
+            </a>
+          </Link>
+          <div className={styles.bar}></div>
+          <Link href="">
+            <a className="text-center no-underline hover:no-underline">
+              <div className={styles.contents}>
+                <Image
+                  src="/images/courses.svg"
+                  height={20}
+                  width={40}
+                  alt=""
+                />
                 <p>Explore Courses</p>
-              </a>
-            </Link>
-          </div>
-          <div className={styles.bar}>
-          </div>
-          <div className="d-flex">
-            <Link href="">
-              <a className="text-center no-underline hover:no-underline">
-                <Image src="/images/admission.svg" height={40} width={80} alt="" />
+              </div>
+            </a>
+          </Link>
+          <div className={styles.bar}></div>
+          <Link href="">
+            <a className="text-center no-underline hover:no-underline">
+              <div className={styles.contents}>
+                <Image
+                  src="/images/admission.svg"
+                  height={20}
+                  width={40}
+                  alt=""
+                />
                 <p>Admissions</p>
-              </a>
-            </Link>
-          </div>
-          <div className={styles.bar}>
-          </div>
-          <div className="d-flex">
-            <Link href="">
-              <a className="text-center no-underline hover:no-underline">
-                <Image src="/images/about.svg" height={40} width={80} alt="" />
+              </div>
+            </a>
+          </Link>
+          <div className={styles.bar}></div>
+          <Link href="">
+            <a className="text-center no-underline hover:no-underline">
+              <div className={styles.contents}>
+                <Image src="/images/about.svg" height={22} width={40} alt="" />
                 <p>About us</p>
-              </a>
-            </Link>
-          </div>
+              </div>
+            </a>
+          </Link>
         </div>
       </Container>
     </>
