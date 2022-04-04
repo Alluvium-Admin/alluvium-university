@@ -14,7 +14,8 @@
     }
     .main{
         display: flex;
-        align-items: center;
+        // align-items: center;
+        align-items: flex-start;
         justify-content: space-around;
         width: 79%;
 
@@ -33,6 +34,11 @@
           width: 50%;
           display: flex;
           justify-content: center;
+        }
+
+        .img{
+          width: 40px !important;
+          height: 40px !important;
         }
         
         .contents{
