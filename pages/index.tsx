@@ -5,6 +5,7 @@ import styles from "../styles/Home.module.css";
 import Hero from "../components/hero";
 import ShortCut from "../components/shortcut";
 import Navigation from "../components/nav";
+import Journey from '../components/journey';
 
 const Home: NextPage = () => {
   return (
@@ -25,6 +26,9 @@ const Home: NextPage = () => {
         </section>
         <section>
           <ShortCut />
+        </section>
+        <section>
+          <Journey />
         </section>
       </main>
     </div>
