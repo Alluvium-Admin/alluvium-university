@@ -1,0 +1,47 @@
+.trend {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  padding-top: 2%;
+  column-gap: 5%;
+}
+
+.trendContent {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  padding-top: 1%;
+}
+
+.imageStyle {
+  width: 35%;
+  height: 100%;
+  position: relative;
+}
+
+.date {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  color: #132230;
+  padding-bottom: 5%;
+}
+
+.title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  color: #212121;
+  padding-bottom: 7%;
+}
+
+.headerlink {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color: #009bc0;
+}
