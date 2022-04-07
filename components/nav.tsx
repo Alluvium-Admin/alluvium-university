@@ -25,26 +25,27 @@ const Navigation: NextComponentType = () => {
           </li>
         </ul>
       </Container>
-      <Navbar className="w-100" collapseOnSelect expand="lg" variant="light">
-        <div className={styles.coverBottom}>
-          <Navbar.Brand href="#home" className="">
-            <Image
-              src="/images/AULogoWhite.svg"
-              height={70}
-              width={70}
-              alt="Alluvium University Logo"
-            />
-          </Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="ms-auto">
-              <Nav.Link className={styles.navData} href="#features">
-                Home
-              </Nav.Link>
-              <Nav.Link className={styles.navData} href="#pricing">
-                Who we are
-              </Nav.Link>
-              {/* <NavDropdown className={styles.navData} title="Courses" id="collasible-nav-dropdown">
+      <Container fluid>
+        <Navbar className="" collapseOnSelect expand="lg" variant="light">
+          <div className={styles.coverBottom}>
+            <Navbar.Brand href="#home" className="brand">
+              <Image
+                src="/images/AULogoWhyte.svg"
+                height={70}
+                width={170}
+                alt="Alluvium University Logo"
+              />
+            </Navbar.Brand>
+            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <Navbar.Collapse id="responsive-navbar-nav" className="navigation">
+              <Nav className="ms-auto">
+                <Nav.Link className={styles.navData} href="#features">
+                  Home
+                </Nav.Link>
+                <Nav.Link className={styles.navData} href="#pricing">
+                  Who we are
+                </Nav.Link>
+                {/* <NavDropdown className={styles.navData} title="Courses" id="collasible-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">
                   Another action
@@ -57,36 +58,37 @@ const Navigation: NextComponentType = () => {
                   Separated link
                 </NavDropdown.Item>
               </NavDropdown> */}
-              <Dropdown as={NavItem}>
-                <Dropdown.Toggle className={styles.navData} as={NavLink}>
-                  Courses
-                </Dropdown.Toggle>
-                <Dropdown.Menu>
-                  <Dropdown.Item>Hello there!</Dropdown.Item>
-                  <NavDropdown.Divider />
-                  <Dropdown.Item>Hello there!</Dropdown.Item>
-                  <NavDropdown.Divider />
-                  <Dropdown.Item>Hello there!</Dropdown.Item>
-                </Dropdown.Menu>
-              </Dropdown>
-              <Nav.Link className={styles.navData} href="#features">
-                Campus
-              </Nav.Link>
-              <Nav.Link className={styles.navData} href="#pricing">
-                Events
-              </Nav.Link>
-              <Nav.Link className={styles.navData} href="#pricing">
-                Contact Us
-              </Nav.Link>
-            </Nav>
-            <Nav>
-              <Nav.Link eventKey={2} href="#memes">
-                <Button className={styles.button}>Apply</Button>
-              </Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
-        </div>
-      </Navbar>
+                <Dropdown as={NavItem}>
+                  <Dropdown.Toggle className={styles.navData} as={NavLink}>
+                    Courses
+                  </Dropdown.Toggle>
+                  <Dropdown.Menu>
+                    <Dropdown.Item>Hello there!</Dropdown.Item>
+                    <NavDropdown.Divider />
+                    <Dropdown.Item>Hello there!</Dropdown.Item>
+                    <NavDropdown.Divider />
+                    <Dropdown.Item>Hello there!</Dropdown.Item>
+                  </Dropdown.Menu>
+                </Dropdown>
+                <Nav.Link className={styles.navData} href="#features">
+                  Campus
+                </Nav.Link>
+                <Nav.Link className={styles.navData} href="#pricing">
+                  Events
+                </Nav.Link>
+                <Nav.Link className={styles.navData} href="#pricing">
+                  Contact Us
+                </Nav.Link>
+              </Nav>
+              <Nav>
+                <Nav.Link eventKey={2} href="#memes">
+                  <Button className={styles.button}>Apply</Button>
+                </Nav.Link>
+              </Nav>
+            </Navbar.Collapse>
+          </div>
+        </Navbar>
+      </Container>
     </>
   );
 };
