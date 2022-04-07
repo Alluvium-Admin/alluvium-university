@@ -5,6 +5,7 @@ import styles from "../styles/Home.module.css";
 import Hero from "../components/hero";
 import ShortCut from "../components/shortcut";
 import Navigation from "../components/nav";
+import Map from "../components/Map";
 
 const Home: NextPage = () => {
   return (
@@ -19,6 +20,7 @@ const Home: NextPage = () => {
         <Navigation />
         <Hero />
         <ShortCut />
+        <Map />
       </main>
     </div>
   );
