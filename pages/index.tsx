@@ -10,6 +10,7 @@ import Event from "../components/Event";
 import Testimony from "../components/Testimony";
 import Footer from "../components/Footer";
 import { Courses } from "../components/courses/courses";
+import Map from "../components/Map";
 
 const Home: NextPage = () => {
   return (
@@ -35,6 +36,9 @@ const Home: NextPage = () => {
         </section>
         <section>
           <Courses />
+        </section>
+        <section>
+          <Map />
         </section>
         <section>
           <Event />
