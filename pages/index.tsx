@@ -10,7 +10,7 @@ import Event from "../components/Event";
 import Testimony from "../components/Testimony";
 import Footer from "../components/Footer";
 import { Courses } from "../components/courses/courses";
-import Map from "../components/Map";
+// import Map from "../components/Map.js";
 
 const Home: NextPage = () => {
   return (
@@ -38,7 +38,7 @@ const Home: NextPage = () => {
           <Courses />
         </section>
         <section>
-          <Map />
+          {/* <Map /> */}
         </section>
         <section>
           <Event />
