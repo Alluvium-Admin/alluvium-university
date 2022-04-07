@@ -20,7 +20,7 @@
 .mandatoryCoursesContent {
   display: flex;
   flex-direction: row;
-  column-gap: 50px;
+  column-gap: 70px;
   margin-top: 15%;
 }
 .courses {
@@ -54,5 +54,6 @@
 @media only screen and (max-width: 400px) {
   .mandatoryCoursesContent {
     flex-direction: column;
+    column-gap: 0px;
   }
 }
