@@ -5,7 +5,10 @@ import styles from "../styles/Home.module.css";
 import Hero from "../components/hero";
 import ShortCut from "../components/shortcut";
 import Navigation from "../components/nav";
-import Journey from '../components/journey';
+import Journey from "../components/journey";
+import Event from "../components/Event";
+import Testimony from "../components/Testimony";
+import Footer from "../components/Footer";
 
 const Home: NextPage = () => {
   return (
@@ -29,6 +32,15 @@ const Home: NextPage = () => {
         </section>
         <section>
           <Journey />
+        </section>
+        <section>
+          <Event />
+        </section>
+        <section>
+          <Testimony />
+        </section>
+        <section>
+          <Footer />
         </section>
       </main>
     </div>
