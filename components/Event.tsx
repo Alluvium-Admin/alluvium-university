@@ -10,28 +10,28 @@ const Event = () => {
                     <div className="event-overlay"></div>
                     <div className="event-body">
                         <p className="event-text">Alluvium University Students </p>
-                        <p className="event-text">Admission Day </p>
+                        <p className="event-text">Opening Day </p>
                     </div>
                 </div>
                 <div className="col-md-6 col-lg-3 col-sm-6 event-bg event-img-2 px-0">
                     <div className="event-overlay"></div>
                     <div className="event-body">
                         <p className="event-text">Alluvium University Students </p>
-                        <p className="event-text">Admission Day </p>
+                        <p className="event-text">Hackathon (to register) </p>
                     </div>
                 </div>
                 <div className="ccol-md-6 col-lg-3 col-sm-6 event-bg event-img-3 px-0">
                     <div className="event-overlay"></div>
                     <div className="event-body">
                         <p className="event-text">Alluvium University Students </p>
-                        <p className="event-text">Admission Day </p>
+                        <p className="event-text">Open lectures: Introduction to Python </p>
                     </div>
                 </div>
                 <div className="col-md-6 col-lg-3 col-sm-6 event-bg event-img-2 px-0">
                     <div className="event-overlay"></div>
                     <div className="event-body">
                         <p className="event-text">Alluvium University Students </p>
-                        <p className="event-text">Admission Day </p>
+                        <p className="event-text">AU Boot Camp </p>
                     </div>
                 </div>
             </div>

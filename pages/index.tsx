@@ -1,6 +1,5 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Hero from "../components/hero";
 import ShortCut from "../components/shortcut";
@@ -10,7 +9,8 @@ import Event from "../components/Event";
 import Testimony from "../components/Testimony";
 import Footer from "../components/Footer";
 import { Courses } from "../components/courses/courses";
-// import Map from "../components/Map.js";
+import Map from "../components/Map.js";
+import News from "../components/news-and-trends/news";
 
 const Home: NextPage = () => {
   return (
@@ -37,8 +37,11 @@ const Home: NextPage = () => {
         <section>
           <Courses />
         </section>
-        <section>
-          {/* <Map /> */}
+        <section className="pb-5 mb-5 w-100">
+          <Map />
+        </section>
+        <section className="w-100 mb-5 pb-5">
+        <News />
         </section>
         <section>
           <Event />

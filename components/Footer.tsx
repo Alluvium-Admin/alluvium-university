@@ -9,8 +9,8 @@ const Footer = () => {
                     <div className="col-md-6 col-lg-4 pb-3 col-sm-6 px-md-5">
                         <ul className="footer-contact">
                             <li className=""><span>Address:</span> Second Floor, Ravi Chambers, Kavuri Hills, London, United Kingdom.</li>
-                            <li className=""><span>Email:</span><a href="/"> university@alluvium.net</a></li>
-                            <li className=""><span>Phone:</span><a href="/"> +2349037550786</a></li>
+                            <li className=""><span>Email:</span><a href="mailto:university@alluvium.net"> university@alluvium.net</a></li>
+                            <li className=""><span>Phone:</span><a href="tel:+2349037550786"> +2349037550786</a></li>
                         </ul>
 
                         <h5>Follow Us:</h5>
@@ -20,10 +20,10 @@ const Footer = () => {
                             <li className=""><a href="https://www.linkedin.com/company/alluvium-hq/" rel="noreferrer" target="_blank"><img src="https://alluvium.net/assets/socials/linkedin.svg" alt="linkedin"/></a></li>
                         </ul>
                     </div>
-                    <div className="footer-quicklinks pb-3 col-sm-6 col-lg-4 col-md-6">
-                        <h5>Quick Links</h5>
+                    <div className="footer-quicklinks pb-3 col-sm-6 col-lg-4 col-md-6 ps-md-3">
+                        <h5 className="text-md-center">Quick Links</h5>
                         <div className="row">
-                            <div className="col-md-6">
+                            <div className="col-md-6 ps-md-5">
                                 <ul className="">
                                     <li className=""><a href="#" rel="noreferrer" target="_blank">Who We Are</a></li>
                                     <li className=""><a href="#" rel="noreferrer" target="_blank">Courses</a></li>
@@ -32,7 +32,7 @@ const Footer = () => {
                                     <li className=""><a href="#" rel="noreferrer" target="_blank">Support</a></li>
                                 </ul>
                             </div>
-                            <div className="col-md-6">
+                            <div className="col-md-6 ps-md-5">
                                 <ul className="">
                                     <li className=""><a href="#" rel="noreferrer" target="_blank">Map</a></li>
                                     <li className=""><a href="#" rel="noreferrer" target="_blank">News</a></li>
@@ -43,7 +43,7 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="footer-quicklinks col-lg-2 col-sm-6 col-md-6 px-md-5">
+                    <div className="footer-quicklinks col-lg-2 col-sm-6 col-md-6 ps-md-5">
                         <h5>Login in as:</h5>
                         <ul className="" >
                             <li className=""><a href="#" rel="noreferrer" target="_blank">Student</a></li>
