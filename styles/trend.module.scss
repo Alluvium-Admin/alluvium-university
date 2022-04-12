@@ -7,6 +7,12 @@
   margin-bottom: 20px;
   // padding-top: 2%;
   column-gap: 5%;
+  @media screen and (max-width: 576px) {
+    display: block; 
+    height: max-content;
+    // background-color: #009bc0;
+    width: 50%;
+  }
 }
 
 .trendContent {
@@ -16,6 +22,9 @@
   justify-content: center;
   // padding-top: 50px;
   // padding-top: 1%;
+  @media screen and (max-width: 576px) {
+    width: 100%;
+  }
 }
 
 .imageStyle {
@@ -32,6 +41,10 @@
   letter-spacing: 0.04em;
   color: #132230;
   // padding-bottom: 5%;
+  @media screen and (max-width: 576px) {
+    font-size: 14px;
+    
+  }
 }
 
 .title {
@@ -41,6 +54,10 @@
   font-size: 24px;
   color: #212121;
   padding-bottom: 7%;
+  @media screen and (max-width: 576px) {
+    font-size: 20px;
+    
+  }
 }
 
 .headerlink {
@@ -49,4 +66,8 @@
   font-weight: 600;
   font-size: 16px;
   color: #009bc0;
+  @media screen and (max-width: 576px) {
+    font-size: 14px;
+    
+  }
 }

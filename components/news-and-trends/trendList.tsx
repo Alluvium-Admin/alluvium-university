@@ -14,9 +14,9 @@ const Trendlist: NextPage<IProps> = (props: IProps) => {
     <div className={styles.trendlist}>
       {trends.map((value, index) => {
         return (
-          <div key={index}>
-            <Trend trendNews={value} /> {index < trends.length - 1 && <hr />}
-          </div>
+          <>
+            <Trend key={index} trendNews={value} /> {index < trends.length - 1 && <hr className="d-none d-sm-block" />}
+          </>
         );
       })}
     </div>

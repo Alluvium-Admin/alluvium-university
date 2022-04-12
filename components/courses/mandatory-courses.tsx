@@ -25,7 +25,7 @@ export const MandatoryCourses: NextComponentType = () => {
         <label className={styles.label}>Mandatory Courses</label>
         <div className={styles.mandatoryCoursesContent}>
           <div className={styles.courses}>
-            <Image src="/images/core-business.svg" {...imageProps} />
+            <Image src="/images/core-business.svg" width={92} height={92} alt="core business" />
             <span className={styles.courseTitle}>Core Business</span>
             {/* <span
               onClick={() => onCurriculumClicked("Core Business")}
@@ -35,7 +35,7 @@ export const MandatoryCourses: NextComponentType = () => {
             </span> */}
           </div>
           <div className={styles.courses}>
-            <Image src="/images/core-data.svg" {...imageProps} />
+            <Image src="/images/core-data.svg" alt="core data" width={92} height={92} />
             <span className={styles.courseTitle}>Core Data</span>
             {/* <span
               onClick={() => onCurriculumClicked("Core Data")}

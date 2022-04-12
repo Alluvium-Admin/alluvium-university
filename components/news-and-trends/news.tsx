@@ -6,7 +6,7 @@ import { newsData } from "../../pages/api/newsData";
 
 const News: NextComponentType = () => {
   return (
-    <div className={styles.news}>
+    <div className={`container ${styles.news}`}>
       <NewsHeader />
       <NewsTrends data={newsData} />
     </div>

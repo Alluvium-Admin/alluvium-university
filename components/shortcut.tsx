@@ -12,7 +12,7 @@ const ShortCut: NextComponentType = () => {
           <Link href="">
             <a className="text-center no-underline hover:no-underline">
               <div className={styles.contents}>
-                <Image src="/images/loc.svg" className={styles.img} height={20} width={20} alt="" />
+                <Image src="/images/loc.svg" className={styles.img} height={25} width={20} alt="" />
                 <p>Our Campus</p>
               </div>
             </a>

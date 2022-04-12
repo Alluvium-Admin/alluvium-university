@@ -18,6 +18,7 @@ const ActiveTrend: NextPage<IProps> = (props: IProps) => {
         height={552}
         width={617}
         layout="responsive"
+        alt=""
       />
       <span className={styles.newsDate}>{date}</span>
       <span className={styles.newstitle}>{title}</span>

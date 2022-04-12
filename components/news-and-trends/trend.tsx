@@ -13,7 +13,7 @@ const Trend: NextPage<IProps> = (props: IProps) => {
   return (
     <div className={styles.trend}>
       <div className={styles.imageStyle}>
-        <Image src={image} height="100%" width={228} layout="fill" alt="Trends" />
+        <Image src={image} height={228} width={228} alt="Trends" />
       </div>
       <div className={styles.trendContent}>
         <span className={styles.date}>{date}</span>

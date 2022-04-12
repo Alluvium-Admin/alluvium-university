@@ -9,7 +9,7 @@ const Testimony = () => {
                     <div className="testimonial-img">
                         <div className="text-white">
                             <div className="svg">
-                                <img src="images/lsc.svg" alt="" className="svg" />
+                                <img src="images/lsc.svg" alt="" className="svg img-fluid" />
                             </div>
                             {/* <img className="img-fluid" src="images/alluvium-testimonial.png" alt="alluvium-testimonial" /> */}
                         </div>
@@ -20,7 +20,7 @@ const Testimony = () => {
                     <div className="position-absolute lsvg">
                         <img src="images/lsc2.svg" alt="" className="lsvg" />
                     </div>
-                    <div className="testimonial-text p-5 position-relative">
+                    <div className="testimonial-text p-md-5 position-relative">
                        
                         <p className="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste modi numquam recusandae nostrum. Minima aperiam nam at sequi rem, minus ea nesciunt quasi culpa, architecto enim doloremque velit repellendus? Deleniti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste modi numquam recusandae nostrum. Minima aperiam nam at sequi rem, minus ea nesciunt quasi culpa, architecto enim doloremque velit repellendus? Deleniti.</p>
 

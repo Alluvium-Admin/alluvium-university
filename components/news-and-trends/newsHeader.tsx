@@ -6,12 +6,12 @@ const NewsHeader: NextComponentType = () => {
   return (
     <div className={styles.newsheader}>
       <label className={styles.label}>News and Trends</label>
-      <NewsLink
+      {/* <NewsLink
         className={styles.headerlink}
         href={"default-asp"}
         title={"Read More News"}
         src={"/images/arrow.svg"}
-      />
+      /> */}
       <hr></hr>
     </div>
   );

@@ -67,13 +67,15 @@ const Journey: NextComponentType = () => {
       <Container fluid className={styles.cover}>
         <h1 className={`mb-5 ${styles.sectionHeading}`}>Start Here</h1>
         <div className={styles.main}>
-          <div className={`p-4 ${styles.mainContents}`}>
+          <div
+            className={`d-none d-sm-block p-4 align-self-center ${styles.mainContents}`}
+          >
             <Image
               src={`/images/${data[currentIndex].image}`}
               // width={518}
               className=""
-                width={529.9/1.3}
-                height={568/1.3}
+              width={529.9 / 1.1}
+              height={568 / 1.1}
               // height={566}
               alt=""
             />
@@ -102,17 +104,34 @@ const Journey: NextComponentType = () => {
                     <div
                       className={`${styles.shortBar} ${
                         currentIndex == index ? styles.shortBarActive : ""
-                      } ${index == (currentIndex-1) ? styles.shortBarPrev : ""}`}
+                      } ${
+                        index == currentIndex - 1 ? styles.shortBarPrev : ""
+                      }`}
                     ></div>
                   </div>
 
                   <div>
-                    <div
-                      
-                      className={`mb-0 px-4 pb-0`}
-                    >
-                      <p className={styles.stage} onClick={() => setCurrentIndex(index)}>Stage {index}</p>
+                    <div className={`mb-0 px-4 pb-0`}>
+                      <p
+                        className={styles.stage}
+                        onClick={() => setCurrentIndex(index)}
+                      >
+                        Stage {index}
+                      </p>
                       <h2 className={styles.title}>{info.title}</h2>
+                    </div>
+                    <div className="d-sm-none my-3 ms-3">
+                      {currentIndex === index && (
+                        <Image
+                          src={`/images/${info.image}`}
+                          // width={518}
+                          className=""
+                          width={529.9 / 1.3}
+                          height={568 / 1.3}
+                          // height={566}
+                          alt=""
+                        />
+                      )}
                     </div>
                     <div className={`p-4 pb-0 ${styles.summaryHead}`}>
                       <div
