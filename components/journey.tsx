@@ -74,8 +74,8 @@ const Journey: NextComponentType = () => {
               src={`/images/${data[currentIndex].image}`}
               // width={518}
               className=""
-              width={529.9 / 1.1}
-              height={568 / 1.1}
+              width={529.9 / 1.3}
+              height={568 / 1.3}
               // height={566}
               alt=""
             />
@@ -133,7 +133,7 @@ const Journey: NextComponentType = () => {
                         />
                       )}
                     </div>
-                    <div className={`p-4 pb-0 ${styles.summaryHead}`}>
+                    <div className={`p-4 pe-0 pb-0 ${styles.summaryHead}`}>
                       <div
                         className={`${styles.summary} ${
                           currentIndex === index

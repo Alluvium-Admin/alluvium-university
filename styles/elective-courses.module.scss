@@ -57,7 +57,14 @@
 
 @media only screen and (max-width: 400px) {
   .electiveCoursesContent {
-    flex-direction: column;
-    column-gap: 0px;
+    // flex-direction: column;
+    // justify-content: start;
+    column-gap: 40px;
+  }
+  .courseTitle{
+    font-size: 18px;
+  }
+  .electives {
+    margin-top: 70px;
   }
 }

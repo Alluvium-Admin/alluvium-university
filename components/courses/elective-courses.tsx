@@ -26,7 +26,7 @@ export const ElectiveCourses: NextComponentType = () => {
         <label className={styles.label}>Electives</label>
         <div className={styles.electiveCoursesContent}>
           <div className={styles.courses}>
-            <Image src="/images/data-center.svg" alt="data center" width={92} height={92} />
+            <Image loading="eager" src="/images/data-center.svg" alt="data center" width={92} height={92} />
             <span className={styles.courseTitle}>Data Center</span>
             {/* <span
               onClick={() => onCurriculumClicked("Data Center")}
@@ -36,7 +36,7 @@ export const ElectiveCourses: NextComponentType = () => {
             </span> */}
           </div>
           <div className={styles.courses}>
-            <Image src="/images/cloud.svg" alt="cloud" width={92} height={92} />
+            <Image loading="eager" src="/images/cloud.svg" alt="cloud" width={92} height={92} />
             <span className={styles.courseTitle}>Cloud</span>
             {/* <span
               onClick={() => onCurriculumClicked("Cloud")}

@@ -222,6 +222,39 @@ footer {
 	}
 
 	.testimonial .testimonial-img{
+		/* display: none; */
+		margin-left: 10px;
+		right: -6vw;
+	}
+
+	.testimonial .testimonial-text {
+		padding: 3rem !important;
+		margin-right: 0px;
+		text-align: center;
+		padding-left: 55px !important;
+	}
+
+	.testimonial .ttext-container .lsvg{
+		display: block;
+		left: 0;
+		height: 50px;
+		z-index: 8 !important;
+	}
+}
+
+@media (max-width:576px) {
+	.footer-logo{
+		position: relative;
+		background: #FAFAFA;
+		width: 80%;
+		text-align: center;
+	}
+
+	.testimonial  .ttext-container{
+		padding-right: 0px !important;
+	}
+
+	.testimonial .testimonial-img{
 		display: none;
 	}
 

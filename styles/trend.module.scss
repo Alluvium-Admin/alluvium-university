@@ -8,10 +8,11 @@
   // padding-top: 2%;
   column-gap: 5%;
   @media screen and (max-width: 576px) {
-    display: block; 
+    // display: block; 
     height: max-content;
+    // align-items: center;
     // background-color: #009bc0;
-    width: 50%;
+    // width: 50%;
   }
 }
 

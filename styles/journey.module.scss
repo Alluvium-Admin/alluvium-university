@@ -41,6 +41,13 @@
 
     .mainContents {
       width: 50%;
+
+      @media screen and (max-width: 576px) {
+        // align-items: flex-start;
+        // justify-content: space-between;
+        width: 100%;
+        // background-color: #009bc0;
+      }
     }
     .summaryHead {
       position: relative;
@@ -110,12 +117,18 @@
           height: 90px;
           transform: scale(1) translateY(0%);
           opacity: 1;
+          @media screen and (max-width: 576px) {
+            height: 350px;
+          }
         }
         .shortBarPrev {
           height: 150px;
           // background-color: black;
           transform: scale(1) translateY(100%);
           opacity: 0;
+          @media screen and (max-width: 576px) {
+            height: 400px;
+          }
         }
       }
 

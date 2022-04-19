@@ -15,11 +15,11 @@ import styles from "../styles/nav.module.scss";
 const Navigation = () => {
   return (
     <>
-      <Container fluid className={styles.coverTop}>
+      <Container fluid className={`d-none d-md-block ${styles.coverTop}`}>
         <ul className="list-group list-group-horizontal px-0">
           <li className="list-group-item border-0">Students</li>
-          <li className="list-group-item border-0">Alumni</li>
-          <li className="list-group-item border-0">Faculty & Staff</li>
+          {/* <li className="list-group-item border-0">Alumni</li> */}
+          {/* <li className="list-group-item border-0">Faculty & Staff</li> */}
           <li className="list-group-item border-0 pe-0">
             <div className="d-flex items-center">
               <Image src={`/images/search.svg`} className="" height={14} width={14} alt={'searchIcon'} />
@@ -29,7 +29,7 @@ const Navigation = () => {
         </ul>
       </Container>
       <Container fluid>
-        <Navbar className="" collapseOnSelect expand="lg" variant="light">
+        <Navbar className=""  collapseOnSelect bg="transparent" expand="lg" variant="light">
           <div className={styles.coverBottom}>
             <Navbar.Brand href="#home" className="brand">
               <Image
@@ -80,6 +80,9 @@ const Navigation = () => {
                 </Nav.Link>
                 <Nav.Link className={styles.navData} href="#pricing">
                   Events
+                </Nav.Link>
+                <Nav.Link className={`d-md-none ${styles.navData}`} href="#pricing">
+                  Students
                 </Nav.Link>
                 <Nav.Link className={styles.navData} href="#pricing">
                   Contact Us
