@@ -6,12 +6,13 @@ import NewsLink from "./link";
 
 interface IProps {
   trendNews: INewsData;
+  key?: number
 }
 const Trend: NextPage<IProps> = (props: IProps) => {
-  const { trendNews } = props;
+  const { trendNews, key } = props;
   const { date, image, title } = trendNews;
   return (
-    <div className={styles.trend}>
+    <div className={styles.trend} key={key}>
       <div className={styles.imageStyle}>
         <Image src={image} height={228} width={228} alt="Trends" />
       </div>
