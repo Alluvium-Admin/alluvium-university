@@ -7,7 +7,7 @@ interface IProps {
   trends: INewsData[];
 }
 
-const Trendlist: NextPage<IProps> = (props: IProps) => {
+const Trendlist = (props: IProps) => {
   const { trends } = props;
 
   return (

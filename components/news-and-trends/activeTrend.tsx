@@ -7,7 +7,7 @@ import NewsLink from "./link";
 interface IProps {
   activeNews: INewsData;
 }
-const ActiveTrend: NextPage<IProps> = (props: IProps) => {
+const ActiveTrend = (props: IProps) => {
   const { activeNews } = props;
   const { id, date, description, link, image, title } = activeNews;
   return (

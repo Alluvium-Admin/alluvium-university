@@ -1,4 +1,4 @@
-import type { NextPage } from "next";
+import type { NextComponentType } from "next";
 import { INewsData } from "../../pages/api/newsData";
 import styles from "../../styles/trend.module.scss";
 import Image from "next/image";
@@ -8,7 +8,7 @@ interface IProps {
   trendNews: INewsData;
   key?: number
 }
-const Trend: NextPage<IProps> = (props: IProps) => {
+const Trend = (props: IProps) => {
   const { trendNews, key } = props;
   const { date, image, title } = trendNews;
   return (

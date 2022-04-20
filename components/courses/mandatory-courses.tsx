@@ -10,7 +10,7 @@ const imageProps = {
   width: 92,
   alt: "alluvium",
 };
-export const MandatoryCourses: NextComponentType = () => {
+export const MandatoryCourses = () => {
   // const [modalProps, setModalProps] = useState<ICurriculumModal>({} as any);
   // const [showModal, setShowModal] = useState<boolean>(false);
 

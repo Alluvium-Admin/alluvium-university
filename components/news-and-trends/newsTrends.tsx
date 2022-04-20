@@ -8,7 +8,7 @@ interface IProps {
   data: INewsData[];
 }
 
-const NewsTrends: NextPage<IProps> = (props: IProps) => {
+const NewsTrends = (props: IProps) => {
   const { data } = props;
 
   return (

@@ -4,7 +4,7 @@ import Link from "next/link";
 import type { NextComponentType } from "next";
 import styles from "../styles/shortCut.module.scss";
 
-const ShortCut: NextComponentType = () => {
+const ShortCut = () => {
   return (
     <>
       <Container fluid className={styles.cover}>

@@ -3,7 +3,7 @@ import { ElectiveCourses } from "./elective-courses";
 import { MandatoryCourses } from "./mandatory-courses";
 import styles from "../../styles/courses.module.scss";
 
-export const Courses: NextComponentType = () => {
+export const Courses = () => {
   return (
     <>
       <div className={styles.courses}>

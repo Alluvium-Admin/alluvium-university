@@ -2,7 +2,7 @@ import type { NextComponentType } from "next";
 import styles from "../../styles/newsHeader.module.scss";
 import NewsLink from "./link";
 
-const NewsHeader: NextComponentType = () => {
+const NewsHeader = () => {
   return (
     <div className={styles.newsheader}>
       <label className={styles.label}>News and Trends</label>

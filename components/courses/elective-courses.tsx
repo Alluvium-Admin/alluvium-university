@@ -11,7 +11,7 @@ const imageProps = {
   alt: "alluvium",
 };
 
-export const ElectiveCourses: NextComponentType = () => {
+export const ElectiveCourses = () => {
   // const [modalProps, setModalProps] = useState<ICurriculumModal>({} as any);
   // const [showModal, setShowModal] = useState<boolean>(false);
 

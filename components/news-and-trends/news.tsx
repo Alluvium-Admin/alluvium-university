@@ -4,7 +4,7 @@ import NewsTrends from "./newsTrends";
 import NewsHeader from "./newsHeader";
 import { newsData } from "../../pages/api/newsData";
 
-const News: NextComponentType = () => {
+const News = () => {
   return (
     <div className={`container ${styles.news}`}>
       <NewsHeader />

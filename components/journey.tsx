@@ -38,7 +38,7 @@ const data = [
   },
 ];
 
-const Journey: NextComponentType = () => {
+const Journey = () => {
   const [currentIndex, setCurrentIndex] = useState<number>(0);
 
   const handleTransition = useCallback(() => {

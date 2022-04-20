@@ -8,7 +8,7 @@ interface IProps {
   href: string;
 }
 
-const NewsLink: NextPage<IProps> = (props: IProps) => {
+const NewsLink = (props: IProps) => {
   const { className, title, src, href } = props;
   return (
     <span className={className}>
