@@ -73,10 +73,10 @@ const Navigation: NextComponentType = () => {
                 <Nav.Link className={styles.navData} href="#features">
                   Campus
                 </Nav.Link>
-                <Nav.Link className={styles.navData} href="#pricing">
+                <Nav.Link className={styles.navData} href="event">
                   Events
                 </Nav.Link>
-                <Nav.Link className={styles.navData} href="#pricing">
+                <Nav.Link className={styles.navData} href="contact">
                   Contact Us
                 </Nav.Link>
               </Nav>

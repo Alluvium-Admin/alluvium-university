@@ -8,6 +8,7 @@ import Navigation from "../components/nav";
 import Event from "../components/Event";
 import Testimony from "../components/Testimony";
 import Footer from "../components/Footer";
+import Journey from '../components/journey';
 
 const Home: NextPage = () => {
   return (
@@ -29,8 +30,13 @@ const Home: NextPage = () => {
         <section>
           <ShortCut />
         </section>
+        <section>
+          <Journey />
+        </section>
+        <section>
         <Event />
 				<Testimony />
+        </section>
       </main>
       <Footer/>
     </div>

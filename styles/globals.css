@@ -4,8 +4,13 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Monteserrat' Segoe UI, Roboto, Oxygen,
+  font-family: -apple-system, BlinkMacSystemFont, 'Montserrat' Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: "Montserrat" !important;
+	font-weight: 700 !important;
 }
 
 a {
@@ -25,6 +30,20 @@ a {
 footer {
   margin-top: 30px;
   /* text-align: center; */
+}
+
+.bg-pri {
+	background: #0D5D71 !important;
+}
+
+.btn-pri {
+	background: #009BC0 !important;
+	color: white !important;
+	padding: 10px;
+}
+
+.breadcrumb{
+	background: #F7F7F7 !important;
 }
 
 .footer{
@@ -186,6 +205,88 @@ footer {
 	z-index: 0;
 }
 
+.form-group {
+	margin-bottom: 20px !important;
+}
+
+.form label{
+	color: #3D3D3D !important;
+}
+
+.font-weight-bold {
+	font-weight: bold;
+}
+
+.form-notice{
+	background: #FFF3D9;
+	border: 1px solid #CDCDCD;
+}
+
+.contant-info li,ul {
+	list-style-type: none;
+	padding: 0 !important;
+	margin-bottom: 5px;
+}
+
+.contant-info  span {
+	font-weight: bold;
+}
+
+.contant-info .mail a{
+	color: #009BC0 !important;
+}
+
+.contact-social li {
+	margin-right: 5px;
+}
+
+.banner-alt h1{
+	display: table;
+	position: absolute;
+	padding: 5px 15px;
+	bottom: 15px;
+}
+
+.banner-alt{
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+	background-position: center !important; 
+	position: relative !important;
+	height: 500px !important;
+}
+
+.event-date{
+	display: table;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+.event-info span{
+	margin-right: 15px  !important;
+}
+
+.event-info li{
+	list-style-type: none;
+	padding: 0 !important;
+	margin-bottom: 15px;
+}
+
+.event-details p {
+	line-height: 1.9;
+}
+
+.search-form input {
+	background: #FAFAFA !important;
+	border: 2px solid #E4E4E4 !important;
+	border-right: 0px !important;
+}
+
+.search-btn {
+	background: #FAFAFA !important;
+	border: 2px solid #E4E4E4 !important;
+	border-left: 0px !important;
+}
 
 @media (max-width:768px) {
 	.footer-logo{
@@ -230,4 +331,44 @@ footer {
 	.testimonial-img{
 		min-height: 400px;
 	}
+}
+
+.react-calendar__month-view__weekdays {
+	color: #000000 !important;
+	font-weight: bolder !important;
+}
+
+.react-calendar__navigation button {
+	font-size: 1em;
+}
+
+.react-calendar__tile--now {
+	background: #009BC0 !important;
+	color: #fff !important;
+}
+
+.react-calendar__month-view__days__day--weekend {
+	color: #000000 !important;
+}
+
+.react-calendar {
+    width: 100% !important;
+    max-width: 100% !important;;
+    background: white;
+    border: 0px solid #a0a096 !important;
+    font-family: "Montserrat";
+    line-height: 1.125em;
+}
+
+/* .react-calendar__viewContainer{
+	border: 1.3951px solid #DFDFDF !important;
+} */
+
+.react-calendar__navigation__label__labelText {
+	font-weight: bold !important;
+}
+
+.react-calendar__month-view__days button {
+	border: 1px solid #DFDFDF !important;
+	background-color: #FCFCFC;
 }
