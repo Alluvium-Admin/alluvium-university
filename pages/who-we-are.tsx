@@ -44,14 +44,15 @@ const Overview: NextComponentType = () => {
                 <p>It was the summer of 2016, Taiwo, formerly of the Big Four, had been brought into a large UK Bank digital transformation programme to consolidate their project management tool estate into one consolidated Atlassian toolset, was joined by Wale, also formerly of the Big Four, to establish an Agile Way of Working. The synergy was instant and long-lasting.</p>
                 <p>The tools supported the controls, deployment and scaling of the new way of working while the methodology utilised and maximised the Atlassian toolset.</p>
                 <p>We had to consolidate data and configuration from several third-party applications, a couple of Jira instances to a single new Jira instance. Same for document storage and dev-ops tools. All the while building, integrating to, and reporting from a new data lake.</p>
-                <p>After the success of that programme, we went to repeat a similar delivery for one of the UK's biggest telecom providers. We have since delivered some of the largest Atlassian tools Consolidation and accompanying Administration, Engineering, Integration, and long-term Support of the Atlassian products for all ways of working. We routinely put back into the customers' pockets, 15 – 45% of their annual licence costs, by consolidating and scaling their use of Jira, Confluence, Bitbucket and other Atlassian products, from multiple Atlassian and third-party applications.</p>
+                <p>After the success of that programme, we went to repeat a similar delivery for one of the UK&apos;s biggest telecom providers. We have since delivered some of the largest Atlassian tools Consolidation and accompanying Administration, Engineering, Integration, and long-term Support of the Atlassian products for all ways of working. We routinely put back into the customers&apos; pockets, 15 – 45% of their annual licence costs, by consolidating and scaling their use of Jira, Confluence, Bitbucket and other Atlassian products, from multiple Atlassian and third-party applications.</p>
             </div>
         </div>
     )
 }
 
 const Home: NextPage = () => {
-    const [currentView, setCurrentView] = useState<string>('overview');
+    const [currentView, setCurrentView] = useState('overview');
+
     return (
         <div className={styles.container}>
             <Head>
