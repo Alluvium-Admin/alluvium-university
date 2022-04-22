@@ -8,8 +8,8 @@ const Footer = () => {
                     </div>
                     <div className="col-md-6 col-lg-4 pb-3 col-sm-6 px-md-5">
                         <ul className="footer-contact">
-                            <li className=""><span>Address:</span> Address: Fagbuaro lane, adebayo, ado ekiti.</li>
-                            <li className=""><span>Email:</span><a href="mailto:university@alluvium.net"> Email: university@alluvium.net</a></li>
+                            <li className=""><span>Address:</span> Ogunnaike Street, Shangisha, Magodo, Lagos State, Nigeria.</li>
+                            <li className=""><span>Email:</span><a href="mailto:university@alluvium.net"> university@alluvium.net</a></li>
                             <li className=""><span>Phone:</span><a href="tel:+234+2349037550786"> +2349037550786</a></li>
                         </ul>
 

@@ -6,15 +6,15 @@ import NewsLink from "./link";
 
 interface IProps {
   trendNews: INewsData;
-  key?: number
+  index?: number
 }
 const Trend = (props: IProps) => {
-  const { trendNews, key } = props;
+  const { trendNews, index } = props;
   const { date, image, title } = trendNews;
   return (
-    <div className={styles.trend} key={key}>
+    <div className={styles.trend} key={index}>
       <div className={styles.imageStyle}>
-        <Image src={image} height={228} width={228} alt="Trends" />
+        <Image loading="eager" src={image} height={228} width={228} alt="Trends" />
       </div>
       <div className={styles.trendContent}>
         <span className={styles.date}>{date}</span>

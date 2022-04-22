@@ -15,7 +15,7 @@ const Trendlist = (props: IProps) => {
       {trends.map((value, index) => {
         return (
           <div key={index}>
-            <Trend key={index} trendNews={value} /> {index < trends.length - 1 && <hr className="d-none d-sm-block" />}
+            <Trend index={index} trendNews={value} /> {index < trends.length - 1 && <hr className="d-none d-sm-block" />}
           </div>
         );
       })}
