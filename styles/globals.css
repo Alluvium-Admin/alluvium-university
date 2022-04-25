@@ -80,6 +80,8 @@ footer {
 }
 
 .footer-contact li {
+ font-size: 15px;
+ line-height: 20px;
   margin-bottom: 7px;
 }
 

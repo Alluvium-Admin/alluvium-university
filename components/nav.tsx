@@ -12,7 +12,11 @@ const Navigation = () => {
       <div className={`container-fluid p-0 ${styles.navCover}`}>
       <Container fluid className={`d-none d-md-block ${styles.coverTop}`}>
         <ul className="list-group list-group-horizontal px-0">
-          <li className="list-group-item border-0">Students</li>
+          <li className="list-group-item border-0">
+            <Link href="/students-resources">
+              <a className="text-white">Students</a>
+            </Link>
+          </li>
           {/* <li className="list-group-item border-0">Alumni</li> */}
           {/* <li className="list-group-item border-0">Faculty & Staff</li> */}
           <li className="list-group-item border-0 pe-0">

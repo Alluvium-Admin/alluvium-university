@@ -1,0 +1,187 @@
+.welcomeImage {
+    background: url('/images/polygon.svg'), url('/images/students/students.png');
+    background-position: 150px 101%, center;
+    background-size: auto, cover;
+    background-repeat: no-repeat;
+    height: 630px;
+    width: 100%;
+    position: relative;
+
+    @media screen and (max-width: 575px) {
+        background-position: 50px 101%, bottom;
+    }
+
+    .welcomeIntro {
+        position: absolute;
+        background-color: white;
+        // top: 100;
+        padding: 0px 1rem;
+        border-radius: 4px;
+        bottom: 40px;
+        left: 100px;
+
+        @media screen and (max-width: 575px) {
+            background-color: rgba(255, 255, 255, 1);
+            left: 10px;
+            bottom: 30px;
+        }
+
+        h1 {
+            // font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 48px;
+            line-height: 65px;
+            color: #132230;
+        }
+    }
+}
+
+.breadcrumbs {
+    height: 66px;
+    background: #F7F7F7;
+    display: flex;
+    align-items: center;
+}
+
+.sideBar {
+    border: 1px solid #BCBCBC;
+    padding: 20px;
+    border-radius: 5px;
+
+    .sideTitle {
+        h2 {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 32px;
+            color: #132230;
+        }
+    }
+
+    .sideContent {
+        a {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 35px;
+            text-decoration-line: underline;
+            color: #132230;
+
+            @media screen and (max-width: 575px) {
+                padding: 8px;
+                // padding-left: 8px;
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        .active {
+            background: #0d1d2b;
+        }
+    }
+
+
+    .sideFooter {
+        h5 {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 22px;
+            color: #132230;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+
+            li{
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+.titleSection {
+    margin-bottom: 40px;
+    width: 72%;
+
+    h2 {
+        // font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 34px;
+        line-height: 45px;
+        color: #132230;
+    }
+}
+
+.contentSection {
+    margin-bottom: 30px;
+
+    h3 {
+        // font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 30px;
+        color: #132230;
+    }
+
+    .contents {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 30px;
+        row-gap: 20px;
+
+        .content {
+            flex-basis: 50%;
+            display: flex;
+            // align-items: center;
+
+            // .image {
+            //     width: 104px;
+            //     height: 104px;
+            // }
+
+            h4 {
+                // font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 24px;
+                margin-top: 10px;
+                color: #000000;
+
+                a {
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            p {
+                // font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                margin: 0px;
+                line-height: 19px;
+                color: #3D3D3D;
+
+            }
+
+            li {
+                // font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                // line-height: 200%;
+                color: #3D3D3D;
+            }
+        }
+    }
+}

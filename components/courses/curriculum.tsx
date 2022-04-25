@@ -1,7 +1,10 @@
+import { MandatoryCourses } from "./mandatory-courses";
+import { ElectiveCourses } from "./elective-courses";
+
 export interface ICurriculumModal {
   header: any;
   body: any;
-  footer: any;
+  footer?: any;
 }
 
 const getModalHeader = (title: string) => {
@@ -10,6 +13,7 @@ const getModalHeader = (title: string) => {
 
 const getModalBody = (title = "Nothing yet to show") => {
   return <div>{title}</div>;
+  // return <div><MandatoryCourses /><ElectiveCourses /></div>;
 };
 
 const getModalFooter = (title = "Close") => {
@@ -35,7 +39,7 @@ const curriculums: Record<string, ICurriculumModal> = {
   "Data Center": {
     header: getModalHeader("Data Center"),
     body: getModalBody(),
-    footer: getModalFooter(),
+    // footer: getModalFooter(),
   },
 };
 
