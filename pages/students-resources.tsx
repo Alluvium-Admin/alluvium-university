@@ -12,7 +12,7 @@ const MainContent: NextComponentType = () => {
         <div>
             <div className={styles.titleSection}>
                 <h2 className="">Students Resources</h2>
-                <p>Below are frequently-used links for incoming and current students. If you'd like to request a link be added, please send an email to <a className="text-primary text-decoration-underline" href="mailto:alluviumuniversity@co.uk">alluviumuniversity@co.uk</a>.</p>
+                <p>Below are frequently-used links for incoming and current students. If you&apos;d like to request a link be added, please send an email to <a className="text-primary text-decoration-underline" href="mailto:alluviumuniversity@co.uk">alluviumuniversity@co.uk</a>.</p>
             </div>
             <div className={styles.contentSection}>
                 <h3>Popular Links</h3>
