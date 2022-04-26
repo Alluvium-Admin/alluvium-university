@@ -89,7 +89,7 @@ const Navigation = () => {
                 </li>
                 <li className="nav-item">
                   {/* <Link href="/contact-us"> */}
-                    <a href="http://growwithus.alluvium.net/" target="_blank" className={styles.button}>Apply</a>
+                    <a href="http://growwithus.alluvium.net/" rel="noreferrer" target="_blank" className={styles.button}>Apply</a>
                   {/* </Link> */}
                 </li>
               </ul>
