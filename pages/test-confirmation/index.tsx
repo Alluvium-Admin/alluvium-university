@@ -73,15 +73,18 @@ const MainContent = ({data, setData, setLoading, setResponseData}: {clearData:an
 
     const handleSubmit = async e => {
         setHideButton(true);
-        console.log(data);
+        // console.log(data);
         setLoading(true);
         e.preventDefault();
         if (data) {
             if(data.date && data.time){
                 const responseData2 = await axios.post('/api/availability', data)
-                .then((res) => { console.log(res); return res.data })
+                .then((res) => { 
+                    // console.log(res); 
+                    return res.data
+                 })
                 .catch(err => { console.log(err.response.data); return err.response.data });
-            console.log(responseData2);
+            // console.log(responseData2);
             setResponseData(responseData2);
             setWarningData(null);
             // clearData();
@@ -110,7 +113,7 @@ const MainContent = ({data, setData, setLoading, setResponseData}: {clearData:an
                         }
                     </div>
                     <div>
-                        <h3>Confirm your details</h3>
+                        <h3 className="my-2 my-md-3">Confirm your details</h3>
                         <div className={styles.inputField}>
                             <Image priority src="/images/test-confirmation/fullname.png" width={23.69} height={23.69} alt="fullname" />
                             <input type="text" name="fullname" placeholder="Fullname" id="" onChange={handleChange} required />
@@ -133,9 +136,9 @@ const SideBar: NextComponentType = () => {
             <div className={styles.sideTitle}>
                 <h2 className="">Confirm <br /> Your <br /> Availability</h2>
             </div>
-            <div className={styles.sideFooter}>
+            {/* <div className={styles.sideFooter}>
                 <Image src="/images/test-confirmation/AULogo(white).svg" width={90.46} height={84} alt="Aluvium University" />
-            </div>
+            </div> */}
         </div>
     )
 }
@@ -204,7 +207,7 @@ const Students: NextPage = () => {
                         </div>
                     </div>
                 </section>
-                <section className="bg-danger">
+                <section className="mt-0">
                     <Footer />
                 </section>
             </main>

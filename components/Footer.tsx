@@ -3,10 +3,10 @@ const Footer = () => {
         <footer className="footer">
             <div className="container py-5">
                 <div className="row">
-                    <div className="col-md-6 col-lg-2 col-sm-6 position-relative">
-                        <div className="footer-logo bg-white p-3 "><img className="img-fluid" alt="logo" src="images/logo.png" /></div>
+                    <div className="col-md-6 col-lg-3 col-sm-6 position-relative">
+                        <div className="footer-logo bg-white p-3"><img className="img-fluid" alt="logo" src="images/logo.png" /></div>
                     </div>
-                    <div className="col-md-6 col-lg-4 pb-3 col-sm-6 px-md-5">
+                    <div className="col-md-6 col-lg-3 pb-3 col-sm-6 ps-md-5">
                         <ul className="footer-contact">
                             {/* <li className=""><span>Addresses</span> */}
                             <ul className="ms-0">
@@ -27,6 +27,7 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div className="footer-quicklinks pb-3 col-sm-6 col-lg-3 col-md-6 ps-md-5">
+                        <div className="ms-sm-5">
                         <h5 className="">Quick Links</h5>
                         <div className="row">
                             <div className="col-md-12">
@@ -47,6 +48,7 @@ const Footer = () => {
                                     
                                 </ul>
                             </div> */}
+                        </div>
                         </div>
                     </div>
                     <div className="footer-quicklinks col-lg-3 col-sm-6 col-md-3 ps-md-5">

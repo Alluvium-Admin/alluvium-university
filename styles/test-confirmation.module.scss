@@ -157,9 +157,12 @@
 
 
         .titleSection {
-            margin-bottom: 50px;
+            margin-bottom: 30px;
+            width: 100%;
+            text-align: center;
             @media screen and (max-width: 769px) {
-                margin-bottom: 20px;
+                margin-bottom: 10px;
+                margin-top: 20px;
             }
             h2 {
                 font-style: normal;
