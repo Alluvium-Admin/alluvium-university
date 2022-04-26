@@ -31,7 +31,7 @@ const MainContent: NextComponentType = () => {
                             <Image loading="eager" width={104} height={104} src="/images/students/app.png" />
                         </div>
                         <div className="ps-md-4">
-                            <h4><a href="http://growwithus.alluvium.net/" target="_blank">Students Application</a></h4>
+                            <h4><a href="http://growwithus.alluvium.net/" target="_blank" rel="noreferrer">Students Application</a></h4>
                             <p>Learn how to apply as a student</p>
                         </div>
                     </div>
