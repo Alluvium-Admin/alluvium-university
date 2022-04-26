@@ -55,7 +55,12 @@ const Navigation = () => {
                     <a className={styles.navData}>Who we are</a>
                   </Link>
                 </li>
-                <li className={`nav-item dropdown`}>
+                <li className="nav-item">
+                  <Link href="/#courses">
+                    <a className={styles.navData}>Courses</a>
+                  </Link>
+                </li>
+                {/* <li className={`nav-item dropdown`}>
                   <a className={`nav-link dropdown-toggle ${styles.navData}`} href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Courses
                   </a>
@@ -66,7 +71,7 @@ const Navigation = () => {
                     <li><hr className="dropdown-divider" /></li>
                     <li className="dropdown-item">Cloud</li>
                   </ul>
-                </li>
+                </li> */}
                 <li className="nav-item">
                   <Link href="/events">
                     <a className={styles.navData}>Events</a>
@@ -83,9 +88,9 @@ const Navigation = () => {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link href="/contact-us">
-                    <a className={styles.button}>Apply</a>
-                  </Link>
+                  {/* <Link href="/contact-us"> */}
+                    <a href="http://growwithus.alluvium.net/" target="_blank" className={styles.button}>Apply</a>
+                  {/* </Link> */}
                 </li>
               </ul>
             </div>

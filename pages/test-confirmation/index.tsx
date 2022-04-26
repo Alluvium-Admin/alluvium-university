@@ -37,7 +37,7 @@ const availabilityOptions: IAvailabilityOption[] = [
 ]
 
 
-const MainContent = ({data, setData, setLoading, setResponseData}: {clearData:any, setResponseData: any, setLoading: any, data: any, setData:any}) => {
+const MainContent = ({ data, setData, setLoading, setResponseData }: { clearData: any, setResponseData: any, setLoading: any, data: any, setData: any }) => {
     // const [loading, setLoading] = useState(false);
     const [currentRadio, setCurrentRadio] = useState(null)
     // const [responseData, setResponseData] = useState(null);
@@ -45,9 +45,13 @@ const MainContent = ({data, setData, setLoading, setResponseData}: {clearData:an
     const [warningData, setWarningData] = useState(null);
     const radioElem = useRef(null);
 
-    // useEffect(()=>{
-    //   console.log(data);
-    // }, [data])
+    useEffect(() => {
+        if (data) {
+            if (data.firstname && data.lastname) {
+                setData(prev => prev ? ({ ...prev, fullname: `${data.firstname} ${data.lastname}` }) : { fullname: `${data.firstname} ${data.lastname}` });
+            }
+        }
+    }, [data])
 
     useEffect(() => {
         if (radioElem.current) {
@@ -77,18 +81,18 @@ const MainContent = ({data, setData, setLoading, setResponseData}: {clearData:an
         setLoading(true);
         e.preventDefault();
         if (data) {
-            if(data.date && data.time){
+            if (data.date && data.time) {
                 const responseData2 = await axios.post('/api/availability', data)
-                .then((res) => { 
-                    // console.log(res); 
-                    return res.data
-                 })
-                .catch(err => { console.log(err.response.data); return err.response.data });
-            // console.log(responseData2);
-            setResponseData(responseData2);
-            setWarningData(null);
-            // clearData();
-            // if(responseData2.success){
+                    .then((res) => {
+                        // console.log(res); 
+                        return res.data
+                    })
+                    .catch(err => { console.log(err.response.data); return err.response.data });
+                // console.log(responseData2);
+                setResponseData(responseData2);
+                setWarningData(null);
+                // clearData();
+                // if(responseData2.success){
                 //   e.reset();
                 // }
             } else {
@@ -115,8 +119,12 @@ const MainContent = ({data, setData, setLoading, setResponseData}: {clearData:an
                     <div>
                         <h3 className="my-2 my-md-3">Confirm your details</h3>
                         <div className={styles.inputField}>
-                            <Image priority src="/images/test-confirmation/fullname.png" width={23.69} height={23.69} alt="fullname" />
-                            <input type="text" name="fullname" placeholder="Fullname" id="" onChange={handleChange} required />
+                            <Image priority src="/images/test-confirmation/fullname.png" width={23.69} height={23.69} alt="firstname" />
+                            <input type="text" name="firstname" placeholder="Firstname" id="" onChange={handleChange} required />
+                        </div>
+                        <div className={styles.inputField}>
+                            <Image priority src="/images/test-confirmation/fullname.png" width={23.69} height={23.69} alt="lastname" />
+                            <input type="text" name="lastname" placeholder="Lastname" id="" onChange={handleChange} required />
                         </div>
                         <div className={styles.inputField}>
                             <Image priority src="/images/test-confirmation/email.png" width={23.69} height={23.69} alt="email" />
@@ -198,7 +206,7 @@ const Students: NextPage = () => {
                                     <div className={`${styles.response} ${responseData ? (responseData.success ? styles.success : styles.danger) : ''}`}>
                                         <div className={`${styles.responseData} ${responseData ? (responseData.success ? styles.successBG : styles.dangerBG) : ''}`}>
                                             <button onClick={() => clearData()}>x</button>
-                                            <h3>{loading ? 'Loading...' : responseData.message}</h3> 
+                                            <h3>{loading ? 'Loading...' : responseData.message}</h3>
                                         </div>
                                     </div>
                                 )

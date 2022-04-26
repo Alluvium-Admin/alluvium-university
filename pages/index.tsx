@@ -28,13 +28,13 @@ const Home: NextPage = () => {
         <section>
           <Hero />
         </section>
-        <section>
+        {/* <section>
           <ShortCut />
-        </section>
+        </section> */}
         <section>
           <Journey />
         </section>
-        <section>
+        <section id="courses">
           <Courses />
         </section>
         <section className="pb-5 mb-5 w-100">
@@ -43,9 +43,9 @@ const Home: NextPage = () => {
         <section className="w-100 mb-5 pb-5">
         <News />
         </section>
-        <section>
+        {/* <section>
           <Event />
-        </section>
+        </section> */}
         <section>
           <Testimony />
         </section>
