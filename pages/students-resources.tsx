@@ -12,7 +12,7 @@ const MainContent: NextComponentType = () => {
         <div>
             <div className={styles.titleSection}>
                 <h2 className="">Students Resources</h2>
-                <p>Below are frequently-used links for incoming and current students. If you&apos;d like to request a link be added, please send an email to <a className="text-primary text-decoration-underline" href="mailto:alluviumuniversity@co.uk">alluviumuniversity@co.uk</a>.</p>
+                <p>Below are frequently-used links for incoming and current students. If you&apos;d like to request a link be added, please send an email to <a className="text-primary text-decoration-underline" href="mailto:university@alluvium.net">university@alluvium.net</a>.</p>
             </div>
             <div className={styles.contentSection}>
                 <h3>Popular Links</h3>
@@ -31,7 +31,7 @@ const MainContent: NextComponentType = () => {
                             <Image loading="eager" width={104} height={104} src="/images/students/app.png" />
                         </div>
                         <div className="ps-md-4">
-                            <h4><a href="http://growwithus.alluvium.net/" target="_blank" rel="noreferrer">Students Application</a></h4>
+                            <h4><a href="http://growwithus.alluvium.net/showing-interest" target="_blank" rel="noreferrer">Students Application</a></h4>
                             <p>Learn how to apply as a student</p>
                         </div>
                     </div>
@@ -49,7 +49,7 @@ const MainContent: NextComponentType = () => {
                             <Image loading="eager" width={104} height={104} src="/images/students/courses.png" />
                         </div>
                         <div className="ps-md-4">
-                            <h4><a href="#">Courses</a></h4>
+                            <h4><Link href="/#courses"><a>Courses</a></Link></h4>
                             <p>Check out all of the available courses</p>
                         </div>
                     </div>
@@ -67,20 +67,21 @@ const SideBar: NextComponentType = () => {
             <hr className="my-3" />
             <div className={styles.sideContent}>
                 <ul>
-                    <li><a href="#">Campus Safety</a></li>
+                    <li>Coming Soon</li>
+                    {/* <li><a href="#">Campus Safety</a></li>
                     <li><a href="#">Campus Covid 19 Rules</a></li>
                     <li><a href="#">Campus Safety</a></li>
-                    <li><a href="#">Campus Covid 19 Rules</a></li>
+                    <li><a href="#">Campus Covid 19 Rules</a></li> */}
                 </ul>
             </div>
             <hr className="my-3" />
             <div className={styles.sideFooter}>
                 <h5>Follow Us:</h5>
                 <ul className="" style={{ display: 'flex' }}>
-                    <li className=""><a href="https://twitter.com/alluviumhq?s=08" rel="noreferrer" target="_blank"><Image loading="eager" width={31.8} height={31.8} src="/images/socials/twitter.svg" alt="twitter" /></a></li>
-                    <li className=""><a href="https://www.facebook.com/alluviumhq/?ti=as" rel="noreferrer" target="_blank"><Image loading="eager" width={31.8} height={31.8} src="/images/socials/facebook.svg" alt="facebook" /></a></li>
-                    <li className=""><a href="https://www.linkedin.com/company/alluvium-hq/" rel="noreferrer" target="_blank"><Image loading="eager" width={31.8} height={31.8} src="/images/socials/linkedin.svg" alt="linkedin" /></a></li>
-                    <li className=""><a href="https://www.linkedin.com/company/alluvium-hq/" rel="noreferrer" target="_blank"><Image loading="eager" width={31.8} height={31.8} src="/images/socials/instagram.svg" alt="linkedin" /></a></li>
+                    {/* <li className=""><a href="https://twitter.com/alluviumhq?s=08" rel="noreferrer" target="_blank"><Image loading="eager" width={31.8} height={31.8} src="/images/socials/twitter.svg" alt="twitter" /></a></li> */}
+                    {/* <li className=""><a href="https://www.facebook.com/alluviumhq/?ti=as" rel="noreferrer" target="_blank"><Image loading="eager" width={31.8} height={31.8} src="/images/socials/facebook.svg" alt="facebook" /></a></li> */}
+                    <li className=""><a href="https://www.linkedin.com/company/alluvium-university/" rel="noreferrer" target="_blank"><Image loading="eager" width={31.8} height={31.8} src="/images/socials/linkedin.svg" alt="linkedin" /></a></li>
+                    <li className=""><a href="https://www.instagram.com/alluvium_university/" rel="noreferrer" target="_blank"><Image loading="eager" width={31.8} height={31.8} src="/images/socials/instagram.svg" alt="Instagram" /></a></li>
                 </ul>
             </div>
         </div>
@@ -113,10 +114,10 @@ const Students: NextPage = () => {
                     <div className={`container-fluid ps-3 ps-md-5 ${styles.breadcrumbs}`}>
                         <div>
                             <Link href="/">
-                                <a className="text-primary">Home</a>
+                                <a className="text-primary text-decoration-none">Home</a>
                             </Link>
                             <span className="mx-1">/</span>
-                            <Link href="">
+                            <Link href="#">
                                 <a>Students Resources</a>
                             </Link>
                         </div>

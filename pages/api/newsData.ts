@@ -8,20 +8,20 @@ export interface INewsData {
 }
 
 const description =
-  "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient ";
+  "LEARN AND EARN with us and take a step towards an exciting career in a programming language";
 
 export const newsData: INewsData[] = [
   {
     id: 0,
-    image: "/images/newsImage.svg",
+    image: "/images/news-trends/First flyer.jpg",
     date: "21 May, 2022",
-    title: "Alluvium University Launches",
+    title: "LEARN AND EARN with us",
     description,
-    link: "default-asp",
+    link: "https://www.linkedin.com/posts/alluvium-university_alluviumuniversity-activity-6924740897343496193-Wx6m?utm_source=linkedin_share&utm_medium=member_desktop_web",
   },
   {
     id: 1,
-    image: "/images/newsImageSmall.svg",
+    image: "/images/news-trends/Second flyer.jpg",
     date: "21 May, 2022",
     title: "Alluvium University Launches",
     description,
@@ -29,7 +29,7 @@ export const newsData: INewsData[] = [
   },
   {
     id: 2,
-    image: "/images/newsImageSmall.svg",
+    image: "/images/news-trends/Second flyer.jpg",
     date: "21 May, 2022",
     title: "Alluvium University Launches",
     description,
@@ -37,7 +37,7 @@ export const newsData: INewsData[] = [
   },
   {
     id: 3,
-    image: "/images/newsImageSmall.svg",
+    image: "/images/news-trends/Second flyer.jpg",
     date: "21 May, 2022",
     title: "Alluvium University Launches",
     description,

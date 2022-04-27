@@ -37,16 +37,16 @@ const Home: NextPage = () => {
         <section id="courses">
           <Courses />
         </section>
-        <section className="pb-5 mb-5 w-100">
+        <section id='map' className="pb-5 mb-5 w-100">
           <Map />
         </section>
-        <section className="w-100 mb-5 pb-5">
+        <section id="news" className="w-100 mb-5 pb-5">
         <News />
         </section>
-        {/* <section>
+        {/* <section id='event'>
           <Event />
         </section> */}
-        <section>
+        <section id="testimony">
           <Testimony />
         </section>
         <section>

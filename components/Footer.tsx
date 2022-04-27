@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 const Footer = () => {
     return (
         <footer className="footer">
@@ -20,10 +22,10 @@ const Footer = () => {
 
                         <h5>Follow Us:</h5>
                         <ul className="footer-social" style={{display: 'flex'}}>
-                            <li className=""><a href="https://twitter.com/alluviumhq?s=08" rel="noreferrer" target="_blank"><img src="https://alluvium.net/assets/socials/twitter.svg" alt="twitter"/></a></li>
-                            <li className=""><a href="https://www.facebook.com/alluviumhq/?ti=as" rel="noreferrer" target="_blank"><img src="https://alluvium.net/assets/socials/facebook.svg" alt="facebook"/></a></li>
-                            <li className=""><a href="https://www.linkedin.com/company/alluvium-hq/" rel="noreferrer" target="_blank"><img src="https://alluvium.net/assets/socials/linkedin.svg" alt="linkedin"/></a></li>
-                            <li className=""><a href="https://www.linkedin.com/company/alluvium-hq/" rel="noreferrer" target="_blank"><img src="https://alluvium.net/assets/socials/instagram.svg" alt="linkedin"/></a></li>
+                            {/* <li className=""><a href="https://twitter.com/alluviumhq?s=08" rel="noreferrer" target="_blank"><img src="https://alluvium.net/assets/socials/twitter.svg" alt="twitter"/></a></li> */}
+                            {/* <li className=""><a href="https://www.facebook.com/alluviumhq/?ti=as" rel="noreferrer" target="_blank"><img src="https://alluvium.net/assets/socials/facebook.svg" alt="facebook"/></a></li> */}
+                            <li className=""><a href="https://www.linkedin.com/company/alluvium-university/" rel="noreferrer" target="_blank"><img src="https://alluvium.net/assets/socials/linkedin.svg" alt="linkedin"/></a></li>
+                            <li className=""><a href="https://www.instagram.com/alluvium_university/" rel="noreferrer" target="_blank"><img src="https://alluvium.net/assets/socials/instagram.svg" alt="Instagram"/></a></li>
                         </ul>
                     </div>
                     <div className="footer-quicklinks pb-3 col-sm-6 col-lg-3 col-md-6 ps-md-5">
@@ -32,11 +34,11 @@ const Footer = () => {
                         <div className="row">
                             <div className="col-md-12">
                                 <ul className="">
-                                    <li className=""><a href="#" rel="noreferrer" target="_blank">News</a></li>
-                                    <li className=""><a href="#" rel="noreferrer" target="_blank">Courses</a></li>
-                                    <li className=""><a href="#" rel="noreferrer" target="_blank">Support</a></li>
-                                    <li className=""><a href="#" rel="noreferrer" target="_blank">Who We Are</a></li>
-                                    <li className=""><a href="#" rel="noreferrer" target="_blank">Academic Calendar</a></li>
+                                    <li className=""><Link href="/#news"><a className='text-decoration-none text-white'>News</a></Link></li>
+                                    <li className=""><Link href="/#courses"><a className='text-decoration-none text-white'>Courses</a></Link></li>
+                                    {/* <li className=""><a href="#" className='text-decoration-none text-white'>Support</a></li> */}
+                                    <li className=""><Link href="/who-we-are"><a className='text-decoration-none text-white'>Who We Are</a></Link></li>
+                                    {/* <li className=""><a href="/students" rel="noreferrer" target="_blank">Academic Calendar</a></li> */}
                                     {/* <li className=""><a href="#" rel="noreferrer" target="_blank">Campus</a></li> */}
                                     {/* <li className=""><a href="#" rel="noreferrer" target="_blank">Events</a></li> */}
                                 </ul>
@@ -56,7 +58,7 @@ const Footer = () => {
                         <ul className="" >
                             <li className=""><a href="#" rel="noreferrer" target="_blank">Student</a></li>
                             <li className=""><a href="#" rel="noreferrer" target="_blank">Staff</a></li>
-                            <li className=""><a href="#" rel="noreferrer" target="_blank">Admin</a></li>
+                            {/* <li className=""><a href="#" rel="noreferrer" target="_blank">Admin</a></li> */}
                         </ul>
                     </div>
                 </div>
@@ -64,7 +66,7 @@ const Footer = () => {
             </div>
             <div className="footer-copyright pb-1 pt-3">
                 <div className="container">
-                    <p>&copy; {new Date().getFullYear()} Alluvium University | <a href="" >Privacy Policy</a> </p>
+                    <p>&copy; {new Date().getFullYear()} Alluvium University | <a href="/files/Privacy Policy.pdf" download="Alluvium University Privacy Policy" className='text-decoration-none text-white' >Privacy Policy</a> </p>
                 </div>
             </div>
         </footer>

@@ -12,10 +12,10 @@ const cardItems = [
 ];
 
 function determineClasses(indexes: {
-    previousIndex: number,
-    currentIndex: number,
-    nextIndex: number,
-  }, cardIndex: number) {
+  previousIndex: number,
+  currentIndex: number,
+  nextIndex: number,
+}, cardIndex: number) {
 
   if (indexes) {
     if (indexes.currentIndex === cardIndex) {
@@ -32,11 +32,11 @@ function determineClasses(indexes: {
 
 
 const Hero = () => {
-    const [rootIndexes, setRootIndexes] = useState({
-        previousIndex: 0,
-        currentIndex: 0,
-        nextIndex: 1,
-      });
+  const [rootIndexes, setRootIndexes] = useState({
+    previousIndex: 0,
+    currentIndex: 0,
+    nextIndex: 1,
+  });
   const [indexes, setIndexes] = useState({
     previousIndex: 0,
     currentIndex: 0,
@@ -85,15 +85,17 @@ const Hero = () => {
             <div className={styles.galleryViewer}>
               <div className={styles.slider}>
                 {cardItems.map((info, index) => (
-                <h2 key={index}
-                className={`${styles.textAnimate} ${styles[determineClasses(rootIndexes, index)]}`}
-                // onClick={() => manuallyHandleCardTransition(index)}
-                >{info}</h2>
+                  <h2 key={index}
+                    className={`${styles.textAnimate} ${styles[determineClasses(rootIndexes, index)]}`}
+                  // onClick={() => manuallyHandleCardTransition(index)}
+                  >{info}</h2>
                 ))}
               </div>
             </div>
           </div>
-          <button className={styles.button}>Join In</button>
+          {/* <button className={styles.button}> */}
+            <a href="http://growwithus.alluvium.net/showing-interest" rel="noreferrer" target="_blank" className={styles.button}>Join In</a>
+          {/* </button> */}
         </div>
       </Container>
     </>

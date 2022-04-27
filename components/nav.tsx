@@ -1,7 +1,7 @@
 import {
   Container,
 } from "react-bootstrap";
-import type { NextComponentType } from "next";
+// import type { NextComponentType } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "../styles/nav.module.scss";
@@ -14,7 +14,7 @@ const Navigation = () => {
         <ul className="list-group list-group-horizontal px-0">
           <li className="list-group-item border-0">
             <Link href="/students-resources">
-              <a className="text-white">Students</a>
+              <a className="text-white text-decoration-none">Students</a>
             </Link>
           </li>
           {/* <li className="list-group-item border-0">Alumni</li> */}
@@ -31,7 +31,7 @@ const Navigation = () => {
         <nav className={`navbar navbar-expand-lg navbar-light bg-light ${styles.coverBottom}`}>
           <div className="container-fluid bg-white">
             <Link href="/">
-              <a className="navbar-brand">
+              <a className="navbar-brand text-decoration-none">
                 <Image
                   src="/images/AULogoWhyte.svg"
                   height={70}
@@ -72,24 +72,24 @@ const Navigation = () => {
                     <li className="dropdown-item">Cloud</li>
                   </ul>
                 </li> */}
-                <li className="nav-item">
+                {/* <li className="nav-item">
                   <Link href="/events">
                     <a className={styles.navData}>Events</a>
                   </Link>
-                </li>
+                </li> */}
                 <li className="nav-item">
                   <Link href="/students">
                     <a className={`d-md-none ${styles.navData}`}>Students</a>
                   </Link>
                 </li>
-                <li className="nav-item">
+                {/* <li className="nav-item">
                   <Link href="/contact-us">
                     <a className={styles.navData}>Contact Us</a>
                   </Link>
-                </li>
+                </li> */}
                 <li className="nav-item">
                   {/* <Link href="/contact-us"> */}
-                    <a href="http://growwithus.alluvium.net/" rel="noreferrer" target="_blank" className={styles.button}>Apply</a>
+                    <a href="http://growwithus.alluvium.net/showing-interest" rel="noreferrer" target="_blank" className={styles.button}>Apply</a>
                   {/* </Link> */}
                 </li>
               </ul>

@@ -27,7 +27,7 @@ const ActiveTrend = (props: IProps) => {
         className={styles.headerLink}
         title={"Read More"}
         src={"/images/arrow.svg"}
-        href={"default-asp"}
+        href={link}
       />
     </div>
   );

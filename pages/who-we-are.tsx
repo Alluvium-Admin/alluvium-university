@@ -23,13 +23,13 @@ const MissionVission: NextComponentType = () => {
             <div className={styles.contentSection}>
                 <h3>Our Core Values:</h3>
                 <p>Our core values are the foundation of our growing culture and future.  Being a part of team means you like who we are and what we stand for.</p>
-                <ol type="1">
+                <ul>
                     <li>Growth</li>
                     <li>Integrity</li>
                     <li>Transparency</li>
                     <li>Collaboration</li>
                     <li>Balance</li>
-                </ol>
+                </ul>
             </div>
         </div>
     )
@@ -76,10 +76,10 @@ const Home: NextPage = () => {
                     <div className={`container-fluid ps-3 ps-md-5 ${styles.breadcrumbs}`}>
                         <div>
                             <Link href="/">
-                                <a className="text-primary">Home</a>
+                                <a className="text-primary text-decoration-none">Home</a>
                             </Link>
                             <span className="mx-1">/</span>
-                            <Link href="">
+                            <Link href="#">
                                 <a>Who We Are</a>
                             </Link>
                         </div>
@@ -92,13 +92,13 @@ const Home: NextPage = () => {
                                 <a className={`list-group-item ${styles.menuTitle}`}>Menu</a>
                                 <a className={`list-group-item list-group-item-action ${currentView == 'overview' ? styles.active : ''}`} onClick={() => setCurrentView('overview')} id="list-messages-list" data-toggle="list" href="#overview" role="tab" aria-controls="messages">Overview</a>
                                 <a className={`list-group-item list-group-item-action ${currentView == 'mission&vision' ? styles.active : ''}`} onClick={() => setCurrentView('mission&vision')} id="list-profile-list" data-toggle="list" href="#missionvision" role="tab" aria-controls="profile">Mission & Vision</a>
-                                <a className={`list-group-item list-group-item-action ${currentView == 'contactus' ? styles.active : ''}`} onClick={() => setCurrentView('contactus')} id="list-settings-list" data-toggle="list" href="#" role="tab" aria-controls="settings">Contact Us</a>
+                                {/* <a className={`list-group-item list-group-item-action ${currentView == 'contactus' ? styles.active : ''}`} onClick={() => setCurrentView('contactus')} id="list-settings-list" data-toggle="list" href="#" role="tab" aria-controls="settings">Contact Us</a> */}
                             </div>
                             <div className={`d-sm-none list-group list-group-horizontal ${styles.menu}`} id="list-tab" role="tablist">
                                 <a className={`list-group-item ${styles.menuTitle}`}>Menu</a>
                                 <a className={`list-group-item list-group-item-action ${currentView == 'overview' ? styles.active : ''}`} onClick={() => setCurrentView('overview')} id="list-messages-list" data-toggle="list" href="#overview" role="tab" aria-controls="messages">Overview</a>
                                 <a className={`list-group-item list-group-item-action ${currentView == 'mission&vision' ? styles.active : ''}`} onClick={() => setCurrentView('mission&vision')} id="list-profile-list" data-toggle="list" href="#missionvision" role="tab" aria-controls="profile">Mission & Vision</a>
-                                <a className={`list-group-item list-group-item-action ${currentView == 'contactus' ? styles.active : ''}`} onClick={() => setCurrentView('contactus')} id="list-settings-list" data-toggle="list" href="#" role="tab" aria-controls="settings">Contact Us</a>
+                                {/* <a className={`list-group-item list-group-item-action ${currentView == 'contactus' ? styles.active : ''}`} onClick={() => setCurrentView('contactus')} id="list-settings-list" data-toggle="list" href="#" role="tab" aria-controls="settings">Contact Us</a> */}
                             </div>
                         </div>
                         <div className="col-sm-9 ps-md-5">

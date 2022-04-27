@@ -12,7 +12,7 @@ const NewsLink = (props: IProps) => {
   const { className, title, src, href } = props;
   return (
     <span className={className}>
-      <a href={href}>
+      <a href={href} target='_blank'>
         {title}
         <span style={{ paddingLeft: "10px" }}>
           <Image src={src} height={12} width={8} alt="" />

@@ -10,7 +10,7 @@ interface IProps {
 }
 const Trend = (props: IProps) => {
   const { trendNews, index } = props;
-  const { date, image, title } = trendNews;
+  const { date, image, title, link } = trendNews;
   return (
     <div className={styles.trend} key={index}>
       <div className={styles.imageStyle}>
@@ -23,7 +23,7 @@ const Trend = (props: IProps) => {
           className={styles.headerlink}
           title={"Read More"}
           src={"/images/arrow.svg"}
-          href={"default-asp"}
+          href={link}
         />
       </div>
     </div>
