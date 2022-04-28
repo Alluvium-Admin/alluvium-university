@@ -14,7 +14,7 @@ const Trend = (props: IProps) => {
   return (
     <div className={styles.trend} key={index}>
       <div className={styles.imageStyle}>
-        <Image loading="eager" src={image} height={228} width={228} alt="Trends" />
+        <Image priority loading="eager" src={image} height={228} width={228} alt={title} />
       </div>
       <div className={styles.trendContent}>
         <span className={styles.date}>{date}</span>

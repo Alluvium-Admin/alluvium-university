@@ -27,7 +27,7 @@ export const ElectiveCourses = () => {
         <label className={styles.label}>Elective Courses</label>
         <div className={styles.electiveCoursesContent}>
           <div className={styles.courses}>
-            <Image loading="eager" src="/images/data-center.svg" alt="data center" width={92} height={92} />
+            <Image priority loading="eager" src="/images/data-center.svg" alt="data center" width={100} height={100.05} />
             <span className={styles.courseTitle}>Data Center</span>
             {/* <span
               onClick={() => onCurriculumClicked("Data Center")}
@@ -37,7 +37,7 @@ export const ElectiveCourses = () => {
             </span> */}
           </div>
           <div className={styles.courses}>
-            <Image loading="eager" src="/images/cloud.svg" alt="cloud" width={92} height={92} />
+            <Image priority loading="eager" src="/images/cloud.svg" alt="cloud" width={100} height={100} />
             <span className={styles.courseTitle}>Cloud</span>
             {/* <span
               onClick={() => onCurriculumClicked("Cloud")}

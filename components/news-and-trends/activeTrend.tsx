@@ -13,12 +13,13 @@ const ActiveTrend = (props: IProps) => {
   return (
     <div className={styles.activetrends}>
       <Image
+      priority
         className={styles.activeImage}
         src={image}
         height={552}
         width={617}
         layout="responsive"
-        alt=""
+        alt={title}
       />
       <span className={styles.newsDate}>{date}</span>
       <span className={styles.newstitle}>{title}</span>

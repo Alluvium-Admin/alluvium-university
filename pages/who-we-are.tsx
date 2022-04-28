@@ -1,4 +1,5 @@
 import type { NextPage, NextComponentType } from "next";
+import Layout from "../components/layout/layout";
 import { useState } from "react";
 import Head from "next/head";
 import styles from "../styles/who-we-are.module.scss";
@@ -56,12 +57,12 @@ const Home: NextPage = () => {
     const [currentView, setCurrentView] = useState('overview');
 
     return (
-        <div className={styles.container}>
-            <Head>
+        <Layout head pageTitle="Who We Are" className={styles.container}>
+            {/* <Head>
                 <title>Who We Are | Alluvium University</title>
                 <meta name="description" content="Alluvium University (AU) was set up to offer an opportunity for young promising Africans to pursue a career in the tech industry as engineers or consultants. AU gives a pathway to young people with the drive to be part of the growing diversity and inclusion journey in the tech industry." />
                 <link rel="icon" href="/favicon.ico" />
-            </Head>
+            </Head> */}
 
             <main className={styles.main}>
                 <section className="z-10">
@@ -119,7 +120,7 @@ const Home: NextPage = () => {
                     <Footer />
                 </section>
             </main>
-        </div>
+        </Layout>
     );
 };
 

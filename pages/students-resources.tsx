@@ -1,4 +1,5 @@
 import type { NextPage, NextComponentType } from "next";
+import Layout from "../components/layout/layout";
 // import { useState } from "react";
 import Head from "next/head";
 import styles from "../styles/students-resources.module.scss";
@@ -92,52 +93,56 @@ const Students: NextPage = () => {
     // const [currentView, setCurrentView] = useState('overview');
 
     return (
-        <div className={styles.container}>
-            <Head>
-                <title>Students Resources | Alluvium University</title>
-                <meta name="description" content="Alluvium University (AU) was set up to offer an opportunity for young promising Africans to pursue a career in the tech industry as engineers or consultants. AU gives a pathway to young people with the drive to be part of the growing diversity and inclusion journey in the tech industry." />
-                <link rel="icon" href="/favicon.ico" />
-            </Head>
-
-            <main className={styles.main}>
-                <section className="z-10">
-                    <Navigation />
-                </section>
-                <section>
-                    <div className={`position-relative container-fluid p-0 ${styles.welcomeImage}`}>
-                        <div className={styles.welcomeIntro}>
-                            <h1>Students Resources</h1>
+        <Layout head pageTitle="Students Resources" className={styles.container}>
+                {/* <Head>
+                    <title>Students Resources | Alluvium University</title>
+                    <meta name="description" content="Alluvium University (AU) was set up to offer an opportunity for young promising Africans to pursue a career in the tech industry as engineers or consultants. AU gives a pathway to young people with the drive to be part of the growing diversity and inclusion journey in the tech industry." />
+                    <link rel="icon" href="/favicon.ico" />
+                    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+                    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+                    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+                    <link rel="manifest" href="/site.webmanifest"></link>
+                </Head> */}
+    
+                <main className={styles.main}>
+                    <section className="z-10">
+                        <Navigation />
+                    </section>
+                    <section>
+                        <div className={`position-relative container-fluid p-0 ${styles.welcomeImage}`}>
+                            <div className={styles.welcomeIntro}>
+                                <h1>Students Resources</h1>
+                            </div>
                         </div>
-                    </div>
-                </section>
-                <section>
-                    <div className={`container-fluid ps-3 ps-md-5 ${styles.breadcrumbs}`}>
-                        <div>
-                            <Link href="/">
-                                <a className="text-primary text-decoration-none">Home</a>
-                            </Link>
-                            <span className="mx-1">/</span>
-                            <Link href="#">
-                                <a>Students Resources</a>
-                            </Link>
+                    </section>
+                    <section>
+                        <div className={`container-fluid ps-3 ps-md-5 ${styles.breadcrumbs}`}>
+                            <div>
+                                <Link href="/">
+                                    <a className="text-primary text-decoration-none">Home</a>
+                                </Link>
+                                <span className="mx-1">/</span>
+                                <Link href="#">
+                                    <a>Students Resources</a>
+                                </Link>
+                            </div>
                         </div>
-                    </div>
-                </section>
-                <section className="py-2 mb-5">
-                    <div className="container-fluid container-sm px-2 mx-auto row pb-5 py-md-5">
-                        <div className="col-sm-9 p-0 pe-md-4 mb-5 mb-md-0">
-                            <MainContent />
+                    </section>
+                    <section className="py-2 mb-5">
+                        <div className="container-fluid container-sm px-2 mx-auto row pb-5 py-md-5">
+                            <div className="col-sm-9 p-0 pe-md-4 mb-5 mb-md-0">
+                                <MainContent />
+                            </div>
+                            <div className="col-sm-3">
+                                <SideBar />
+                            </div>
                         </div>
-                        <div className="col-sm-3">
-                            <SideBar />
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    <Footer />
-                </section>
-            </main>
-        </div>
+                    </section>
+                    <section>
+                        <Footer />
+                    </section>
+                </main>
+        </Layout>
     );
 };
 
