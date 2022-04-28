@@ -12,21 +12,24 @@ import type { NextComponentType } from "next";
 import Image from "next/image";
 import styles from "../styles/nav.module.scss";
 
-const Navigation: NextComponentType = () => {
+const Navigation = () => {
   return (
     <>
-      <Container fluid className={styles.coverTop}>
+      <Container fluid className={`d-none d-md-block ${styles.coverTop}`}>
         <ul className="list-group list-group-horizontal px-0">
           <li className="list-group-item border-0">Students</li>
-          <li className="list-group-item border-0">Alumni</li>
-          <li className="list-group-item border-0">Faculty & Staff</li>
+          {/* <li className="list-group-item border-0">Alumni</li> */}
+          {/* <li className="list-group-item border-0">Faculty & Staff</li> */}
           <li className="list-group-item border-0 pe-0">
-            <input type="search" placeholder="Search" />
+            <div className="d-flex items-center">
+              <Image src={`/images/search.svg`} className="" height={14} width={14} alt={'searchIcon'} />
+              <input type="search" disabled placeholder="Search" />
+            </div>
           </li>
         </ul>
       </Container>
       <Container fluid>
-        <Navbar className="" collapseOnSelect expand="lg" variant="light">
+        <Navbar className=""  collapseOnSelect bg="transparent" expand="lg" variant="light">
           <div className={styles.coverBottom}>
             <Navbar.Brand href="#home" className="brand">
               <Image
@@ -63,11 +66,13 @@ const Navigation: NextComponentType = () => {
                     Courses
                   </Dropdown.Toggle>
                   <Dropdown.Menu>
-                    <Dropdown.Item>Hello there!</Dropdown.Item>
-                    <NavDropdown.Divider />
-                    <Dropdown.Item>Hello there!</Dropdown.Item>
-                    <NavDropdown.Divider />
-                    <Dropdown.Item>Hello there!</Dropdown.Item>
+                    <Dropdown.Item>Core Business</Dropdown.Item>
+                    {/* <NavDropdown.Divider /> */}
+                    <Dropdown.Item>Core Data</Dropdown.Item>
+                    {/* <NavDropdown.Divider /> */}
+                    <Dropdown.Item>Data Center</Dropdown.Item>
+                    {/* <NavDropdown.Divider /> */}
+                    <Dropdown.Item>Cloud</Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>
                 <Nav.Link className={styles.navData} href="#features">
@@ -76,9 +81,12 @@ const Navigation: NextComponentType = () => {
                 <Nav.Link className={styles.navData} href="event">
                   Events
                 </Nav.Link>
-                <Nav.Link className={styles.navData} href="contact">
-                  Contact Us
+                <Nav.Link className={styles.navData} href="contact">Contact Us
                 </Nav.Link>
+                <Nav.Link className={`d-md-none ${styles.navData}`} href="#pricing">
+                  Students
+                </Nav.Link>
+                  
               </Nav>
               <Nav>
                 <Nav.Link eventKey={2} href="#memes">

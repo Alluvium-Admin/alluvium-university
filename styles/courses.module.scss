@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+.courses {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 100px 0;
+}
+.label {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 45px;
+  color: #132230;
+}
+@media only screen and (max-width: 400px) {
+  .label {
+    font-size: 24px;
+  }
+}

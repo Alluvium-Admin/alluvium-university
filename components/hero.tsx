@@ -1,5 +1,5 @@
 import { Container } from "react-bootstrap";
-import type { NextComponentType } from "next";
+// import type { NextComponentType } from "next";
 import styles from "../styles/hero.module.scss";
 import { useEffect, useCallback, useState } from "react";
 
@@ -31,7 +31,7 @@ function determineClasses(indexes: {
 }
 
 
-const Hero: NextComponentType = () => {
+const Hero = () => {
     const [rootIndexes, setRootIndexes] = useState({
         previousIndex: 0,
         currentIndex: 0,

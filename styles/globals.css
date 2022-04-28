@@ -108,12 +108,21 @@ footer {
 
 .testimonial{
 	padding: 150px 0 !important;
+	width: 100%;
+	overflow: hidden;
 }
+@media screen and (max-width: 576px) {
+	.testimonial{
+		padding: 10px 0 !important;
+	}
+  }
 
 .testimonial .testimonial-text {
 	background: #132230;
 	padding-left: 110px !important;
 	margin-right: 50px;
+	width: 100%;
+	/* display: none; */
 	/* padding: 3rem !important; */
 }
 
@@ -292,7 +301,54 @@ footer {
 	border-left: 0px !important;
 }
 
+@media (max-width:1024px) {
+	.testimonial .testimonial-text {
+		margin-right: 0px !important;
+	}
+
+	.testimonial .ttext-container {
+		padding-right: 90px;
+	}
+
+	.testimonial-img{
+		min-height: 400px;
+	}
+}
+
 @media (max-width:768px) {
+	.footer-logo{
+		position: relative;
+		background: #FAFAFA;
+		width: 80%;
+		text-align: center;
+	}
+
+	.testimonial  .ttext-container{
+		padding-right: 0px !important;
+	}
+
+	.testimonial .testimonial-img{
+		/* display: none; */
+		margin-left: 10px;
+		right: -6vw;
+	}
+
+	.testimonial .testimonial-text {
+		padding: 3rem !important;
+		margin-right: 0px;
+		text-align: center;
+		padding-left: 55px !important;
+	}
+
+	.testimonial .ttext-container .lsvg{
+		display: block;
+		left: 0;
+		height: 50px;
+		z-index: 8 !important;
+	}
+}
+
+@media (max-width:576px) {
 	.footer-logo{
 		position: relative;
 		background: #FAFAFA;
@@ -320,20 +376,6 @@ footer {
 		left: 0;
 		height: 50px;
 		z-index: 8 !important;
-	}
-}
-
-@media (max-width:1024px) {
-	.testimonial .testimonial-text {
-		margin-right: 0px !important;
-	}
-
-	.testimonial .ttext-container {
-		padding-right: 90px;
-	}
-
-	.testimonial-img{
-		min-height: 400px;
 	}
 }
 
