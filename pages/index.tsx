@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import Layout from "../components/layout/layout";
-import Head from "next/head";
+// import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Hero from "../components/hero";
 import { Courses } from "../components/courses/courses";
