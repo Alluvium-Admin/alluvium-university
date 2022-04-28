@@ -3,15 +3,15 @@ import Layout from "../components/layout/layout";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Hero from "../components/hero";
+import { Courses } from "../components/courses/courses";
+import News from "../components/news-and-trends/news";
+import Map from "../components/Map";
 import ShortCut from "../components/shortcut";
 import Navigation from "../components/nav";
-import Journey from "../components/journey";
 import Event from "../components/Event";
 import Testimony from "../components/Testimony";
 import Footer from "../components/Footer";
-import { Courses } from "../components/courses/courses";
-import Map from "../components/Map.js";
-import News from "../components/news-and-trends/news";
+import Journey from '../components/journey';
 
 const Home: NextPage = () => {
   return (
@@ -58,9 +58,6 @@ const Home: NextPage = () => {
         <section>
           <Footer />
         </section>
-        {/* <Navigation />
-        <Hero />
-        <ShortCut /> */}
       </main>
     {/* </div> */}
     </Layout>
