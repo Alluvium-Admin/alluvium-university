@@ -240,6 +240,10 @@ footer {
 	margin-right: 5px;
 }
 
+.os-social li {
+	margin-right: 10px;
+}
+
 .banner-alt h1{
 	display: table;
 	position: absolute;
