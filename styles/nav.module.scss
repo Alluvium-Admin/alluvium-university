@@ -108,6 +108,10 @@ background: #009bc0;
 border: 0;
 outline: 0;
 border-radius: 5px;
+
+@media screen and (max-width: 780px) {
+  margin-top: 200px;
+}
 }
 .navData {
   font-family: "Montserrat" !important;
@@ -119,6 +123,10 @@ border-radius: 5px;
   margin: 0 10px !important;
   text-decoration: none;
   padding: 0;
+
+  @media screen and (max-width: 780px) {
+    margin-bottom: 20px;
+  }
   
   &:focus{
     color: red;
@@ -134,7 +142,7 @@ border-radius: 5px;
   white-space: nowrap;
   // justify-content: space-between;
   // align-items: center;
-  width: 100%;
+  width: 100vw !important;
   height: 100px;
   padding: 0rem 7rem 0rem 6rem;
   @media screen and (max-width: 1200px) {
@@ -156,7 +164,7 @@ border-radius: 5px;
     // background-color: white;
     padding: 0px !important;
     margin: 0px !important;
-    @media screen and (max-width: 576px) {
+    @media screen and (max-width: 780px) {
       width: 100%;
     }
     .nav{

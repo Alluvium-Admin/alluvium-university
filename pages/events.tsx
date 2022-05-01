@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
+import styles from "../styles/events.module.scss";
 import Navigation from "../components/nav";
 import Footer from "../components/Footer";
 import Breadcrumb from "../components/Breadcrumb";
@@ -26,26 +26,30 @@ const Home: NextPage = () => {
           <Navigation />
         </section>
         <section>
-          <Banner title="Events" backgroundImage={"images/event_banner.png"}/>
+          <Banner title="Events" backgroundImage={"images/event_banner.png"} />
           <Breadcrumb title="Event" />
         </section>
-        <section className="container">
-			<div className="row pb-5">
-				<div className="col-md-6"><h2>Upcoming Events</h2></div>
-				<div className="col-md-6"><Search placeholder="Search events" /></div>
-			</div>
-			
-			<div className="row">
-      			<div className="col-md-4 pl-3"><Calendar /></div>
-				<div className="col-md-8">
-					<EventCard />
-					<EventCard />
-					<EventCard />
-				</div>
-			</div>
+        <section className="container py-5">
+          <div className="row pb-5">
+            <div className="col-md-6"><h2>Upcoming Events</h2></div>
+            <div className="col-md-6"><Search placeholder="Search events" /></div>
+          </div>
+
+          <div className="row">
+            <div className="col-md-4 pl-3"><Calendar /></div>
+            <div className="col-md-8 row p-0">
+              {/* <EventCard />
+              <EventCard />
+              <EventCard /> */}
+              <div className="col-md-3"></div>
+              <div className="col-md-9 py-5 p-md-0">
+                <h2 className={styles.noEvent}>*No upcoming event</h2>
+              </div>
+            </div>
+          </div>
         </section>
       </main>
-      <Footer/>
+      <Footer />
     </div>
   );
 };

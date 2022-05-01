@@ -10,14 +10,14 @@ const Content = ({name} : {name:number}) => {
                         <ul className="">
                             <li className=""><span>Address: </span>No 18 Fagbuaro lane,adebayo,ado ekiti.</li>
                             <li className="mail"><span>Email: </span><a href="mailto:contact@alluvium.net"> contact@alluvium.net</a></li>
-                            <li className=""><span>Phone: </span><a href="/"> +2349037550786</a></li>
+                            <li className=""><span>Phone: </span><a href="tel:+2349037550786"> +2349037550786</a></li>
                         </ul>
                     </div>
                     
                     <Socialmedia />
                 </div>
             )
-        break;
+        // break;
         case 2:
             return (
         
@@ -36,7 +36,7 @@ const Content = ({name} : {name:number}) => {
                     </div>
                 </div>
             )
-        break;
+        // break;
         case 3:
             return (
                 <div className="div">
@@ -48,7 +48,7 @@ const Content = ({name} : {name:number}) => {
                     </div>
                 </div>
             )
-        break;
+        // break;
         default:
         return (
             <div className="empty"></div>

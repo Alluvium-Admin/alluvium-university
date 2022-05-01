@@ -40,7 +40,7 @@ const Footer = () => {
                                     <li className=""><Link href="/who-we-are"><a className='text-decoration-none text-white'>Who We Are</a></Link></li>
                                     {/* <li className=""><a href="/students" rel="noreferrer" target="_blank">Academic Calendar</a></li> */}
                                     {/* <li className=""><a href="#" rel="noreferrer" target="_blank">Campus</a></li> */}
-                                    {/* <li className=""><a href="#" rel="noreferrer" target="_blank">Events</a></li> */}
+                                    <li className=""><Link href="/events"><a className='text-decoration-none text-white'>Events</a></Link></li>
                                 </ul>
                             </div>
                             {/* <div className="col-md-6 ps-md-5">

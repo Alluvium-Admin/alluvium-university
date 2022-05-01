@@ -27,9 +27,9 @@ const Navigation = () => {
           </li>
         </ul>
       </Container>
-      <Container fluid className="p-0">
+      <Container fluid className="p-0 m-0">
         <nav className={`navbar navbar-expand-lg navbar-light bg-light ${styles.coverBottom}`}>
-          <div className="container-fluid bg-white">
+          <div className="container-fluid bg-white m-0 p-0">
             <Link href="/">
               <a className="navbar-brand text-decoration-none">
                 <Image
@@ -72,22 +72,22 @@ const Navigation = () => {
                     <li className="dropdown-item">Cloud</li>
                   </ul>
                 </li> */}
-                {/* <li className="nav-item">
+                <li className="nav-item">
                   <Link href="/events">
                     <a className={styles.navData}>Events</a>
                   </Link>
-                </li> */}
+                </li>
                 <li className="nav-item">
                   <Link href="/students">
                     <a className={`d-md-none ${styles.navData}`}>Students</a>
                   </Link>
                 </li>
-                {/* <li className="nav-item">
+                <li className="nav-item">
                   <Link href="/contact-us">
                     <a className={styles.navData}>Contact Us</a>
                   </Link>
-                </li> */}
-                <li className="nav-item">
+                </li>
+                <li className="nav-item mt-3 ms-2 ms-lg-0 mt-lg-0">
                   {/* <Link href="/contact-us"> */}
                     <a href="http://growwithus.alluvium.net/showing-interest" rel="noreferrer" target="_blank" className={styles.button}>Apply</a>
                   {/* </Link> */}
