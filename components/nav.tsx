@@ -78,7 +78,7 @@ const Navigation = () => {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link href="/students">
+                  <Link href="/students-resources">
                     <a className={`d-md-none ${styles.navData}`}>Students</a>
                   </Link>
                 </li>

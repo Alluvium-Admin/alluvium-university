@@ -17,7 +17,7 @@ export const newsData: INewsData[] = [
     date: "21 May, 2022",
     title: "LEARN AND EARN with us",
     description,
-    link: "https://www.linkedin.com/posts/alluvium-university_alluviumuniversity-activity-6924740897343496193-Wx6m?utm_source=linkedin_share&utm_medium=member_desktop_web",
+    link: "https://www.instagram.com/p/CdBT-eWo8wM/?utm_source=ig_web_copy_link",
   },
   {
     id: 1,
