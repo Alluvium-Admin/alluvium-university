@@ -14,26 +14,27 @@ type IAvailabilityOption = {
 }
 
 const availabilityOptions: IAvailabilityOption[] = [
-    // {
-    //     date: '26/April/2022',
-    //     time: '7:00 PM'
-    // },
-    // {
-    //     date: '27/April/2022',
-    //     time: '10:30 AM'
-    // },
-    // {
-    //     date: '27/April/2022',
-    //     time: '8:00 PM'
-    // },
     {
-        date: '29/April/2022',
-        time: '9:30 AM'
+        date: '3/May/2022',
+        time: '8:00 PM'
     },
     {
-        date: '29/April/2022',
+        date: '4/May/2022',
         time: '2:00 PM'
     },
+    {
+        date: '5/May/2022',
+        time: '10:00 AM'
+    }
+    // ,
+    // {
+    //     date: '29/April/2022',
+    //     time: '9:30 AM'
+    // },
+    // {
+    //     date: '29/April/2022',
+    //     time: '2:00 PM'
+    // },
 ]
 
 
