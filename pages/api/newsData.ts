@@ -25,7 +25,7 @@ export const newsData: INewsData[] = [
     date: "21 May, 2022",
     title: "Alluvium University Launches",
     description,
-    link: "default-asp",
+    link: "https://www.instagram.com/p/CdBT-eWo8wM/?utm_source=ig_web_copy_link",
   },
   {
     id: 2,
@@ -33,7 +33,7 @@ export const newsData: INewsData[] = [
     date: "21 May, 2022",
     title: "Alluvium University Launches",
     description,
-    link: "default-asp",
+    link: "https://www.linkedin.com/posts/alluvium-university_equip-yourself-for-the-world-of-opportunities-activity-6926553647216476160-Gtef?utm_source=linkedin_share&utm_medium=member_desktop_web",
   },
   {
     id: 3,
@@ -41,6 +41,6 @@ export const newsData: INewsData[] = [
     date: "21 May, 2022",
     title: "Alluvium University Launches",
     description,
-    link: "default-asp",
+    link: "https://www.linkedin.com/posts/alluvium-university_equip-yourself-for-the-world-of-opportunities-activity-6926553647216476160-Gtef?utm_source=linkedin_share&utm_medium=member_desktop_web",
   },
 ];

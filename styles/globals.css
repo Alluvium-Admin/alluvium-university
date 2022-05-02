@@ -8,6 +8,10 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+h1,h3,h4,h5,h6{
+    font-family: "Montserrat" !important;
+    font-weight: 700 !important;
+  }
 
 a {
   color: inherit;
