@@ -26,7 +26,7 @@ const Home: NextPage = () => {
           <Navigation />
         </section>
         <section>
-          <Banner title="Events" backgroundImage={"images/event_banner.png"} />
+          <Banner title="Events" backgroundImage={"eventsImage"} />
           <Breadcrumb title="Event" />
         </section>
         <section className="container py-5">

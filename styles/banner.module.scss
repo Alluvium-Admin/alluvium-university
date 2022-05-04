@@ -1,0 +1,89 @@
+.welcomeImage {
+    background: url('/images/polygon.svg'), url('/images/students/students.png');
+    background-position: 150px 101%, center;
+    background-size: auto, cover;
+    background-repeat: no-repeat;
+    height: 630px;
+    width: 100%;
+    position: relative;
+
+    @media screen and (max-width: 575px) {
+        background-position: 50px 101%, bottom;
+    }
+
+}
+
+.eventsImage {
+    background: url('/images/polygon.svg'), url('/images/event_banner.png');
+    background-position: 150px 101%, center;
+    background-size: auto, cover;
+    background-repeat: no-repeat;
+    height: 630px;
+    width: 100%;
+    position: relative;
+
+    @media screen and (max-width: 575px) {
+        background-position: 35px 101%, right bottom;
+    }
+
+}
+.studentsImage {
+    background: url('/images/polygon.svg'), url('/images/students/students.png');
+    background-position: 150px 101%, center;
+    background-size: auto, cover;
+    background-repeat: no-repeat;
+    height: 630px;
+    width: 100%;
+    position: relative;
+
+    @media screen and (max-width: 575px) {
+        background-position: 35px 101%, right bottom;
+    }
+
+}
+.whoweareImage {
+    background: url('/images/polygon.svg'), url('/images/colledge.png');
+    background-position: 150px 101%, center;
+    background-size: auto, cover;
+    background-repeat: no-repeat;
+    height: 630px;
+    width: 100%;
+    position: relative;
+
+    @media screen and (max-width: 575px) {
+        background-position: 35px 101%, right bottom;
+    }
+
+}
+
+.welcomeIntro {
+    position: absolute;
+    background-color: white;
+    // top: 100;
+    padding: 0px 1rem;
+    border-radius: 4px;
+    bottom: 40px;
+    left: 100px;
+    // width: min-content;
+
+    @media screen and (max-width: 575px) {
+        background-color: rgba(255, 255, 255, 1);
+        left: 10px;
+        bottom: 30px;
+        max-width: 90%;
+    }
+    
+    h1 {
+        // font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 48px;
+        line-height: 65px;
+        color: #132230;
+        
+        @media screen and (max-width: 575px) {
+            font-size: 36px;
+            line-height: 46px;
+        }
+    }
+}

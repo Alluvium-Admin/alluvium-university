@@ -3,6 +3,7 @@ import Layout from "../components/layout/layout";
 import { useState } from "react";
 import Head from "next/head";
 import styles from "../styles/who-we-are.module.scss";
+import Banner from "../components/Banner";
 import Navigation from "../components/nav";
 import Footer from "../components/Footer";
 import Link from "next/link";
@@ -69,11 +70,12 @@ const Home: NextPage = () => {
                     <Navigation />
                 </section>
                 <section>
-                    <div className={`position-relative container-fluid p-0 ${styles.welcomeImage}`}>
+                    <Banner backgroundImage="whoweareImage" title="Who We Are" />
+                    {/* <div className={`position-relative container-fluid p-0 ${styles.welcomeImage}`}>
                         <div className={styles.welcomeIntro}>
                             <h1>Who We Are</h1>
                         </div>
-                    </div>
+                    </div> */}
                 </section>
                 <section>
                     <div className={`container-fluid ps-3 ps-md-5 ${styles.breadcrumbs}`}>

@@ -2,6 +2,7 @@ import type { NextPage, NextComponentType } from "next";
 import Layout from "../components/layout/layout";
 // import { useState } from "react";
 import Head from "next/head";
+import Banner from "../components/Banner";
 import styles from "../styles/students-resources.module.scss";
 import Navigation from "../components/nav";
 import Footer from "../components/Footer";
@@ -109,11 +110,12 @@ const Students: NextPage = () => {
                         <Navigation />
                     </section>
                     <section>
-                        <div className={`position-relative container-fluid p-0 ${styles.welcomeImage}`}>
+                        <Banner backgroundImage="studentsImage" title="Students Resources" />
+                        {/* <div className={`position-relative container-fluid p-0 ${styles.welcomeImage}`}>
                             <div className={styles.welcomeIntro}>
                                 <h1>Students Resources</h1>
                             </div>
-                        </div>
+                        </div> */}
                     </section>
                     <section>
                         <div className={`container-fluid ps-3 ps-md-5 ${styles.breadcrumbs}`}>

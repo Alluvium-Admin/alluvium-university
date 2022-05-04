@@ -28,18 +28,21 @@ const Home: NextPage = () => {
           <Breadcrumb title="Contact" />
         </section>
         <section className="container">
-			<h2>Reach Out to Alluvium University</h2>
-			<div className="row my-4">
-				<div className="col-md-8"><Form /></div>
-				<div className="col-md-4">
-					<Card content={<Content name={1} />} />
-					<Card content={<Content name={2} />} />
-					<Card content={<Content name={3} />} />
-				</div>
-			</div>
+          <h2>Reach Out to Alluvium University</h2>
+          <div className="row my-4">
+            <div className="col-md-8">
+              <iframe frameBorder="0" style={{height: '100%', width: '100%%', border: 'none'}} src='https://forms.zohopublic.com/admin1711/form/ContactUs/formperma/ywG1UqqTEfcSggqvjWrl_fTDGN6tS6l8KxBzlvUhZUU'></iframe>
+              {/* <Form /> */}
+            </div>
+            <div className="col-md-4">
+              <Card content={<Content name={1} />} />
+              <Card content={<Content name={2} />} />
+              <Card content={<Content name={3} />} />
+            </div>
+          </div>
         </section>
       </main>
-      <Footer/>
+      <Footer />
     </div>
   );
 };
