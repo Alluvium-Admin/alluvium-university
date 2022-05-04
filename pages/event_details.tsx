@@ -25,7 +25,7 @@ const Home: NextPage = () => {
           <Navigation />
         </section>
         <section>
-          <Banner title="Events" backgroundImage={"images/event_banner.png"}/>
+          <Banner title="Events" backgroundImage={"eventsImage"}/>
           <Breadcrumb title="Event/ Alluvium University Students Admission Day" />
         </section>
         <section className="container">
