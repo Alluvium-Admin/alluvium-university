@@ -31,7 +31,7 @@ const Home: NextPage = () => {
           <h2>Reach Out to Alluvium University</h2>
           <div className="row my-4">
             <div className="col-md-8">
-              <iframe frameBorder="0" style={{height: '100%', width: '100%%', border: 'none'}} src='https://forms.zohopublic.com/admin1711/form/ContactUs/formperma/ywG1UqqTEfcSggqvjWrl_fTDGN6tS6l8KxBzlvUhZUU'></iframe>
+              <iframe frameBorder="0" className={styles.contactus} src='https://forms.zohopublic.com/admin1711/form/ContactUs/formperma/ywG1UqqTEfcSggqvjWrl_fTDGN6tS6l8KxBzlvUhZUU'></iframe>
               {/* <Form /> */}
             </div>
             <div className="col-md-4">

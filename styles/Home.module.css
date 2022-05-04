@@ -12,6 +12,11 @@
   padding: 0;
 }
 
+.contactus{
+  height: 100%;
+  width: 100%;
+  border: none;
+}
 
 .footer {
   display: flex;
@@ -113,5 +118,8 @@
   .grid {
     width: 100%;
     flex-direction: column;
+  }
+  .contactus{
+    height: 690px;
   }
 }
