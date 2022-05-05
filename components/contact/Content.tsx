@@ -1,26 +1,30 @@
-import PropTypes  from "prop-types";
+import PropTypes from "prop-types";
 import Socialmedia from "../Socialmedia";
-const Content = ({name} : {name:number}) => {
-    switch (name){
+const Content = ({ name }: { name: number }) => {
+    switch (name) {
         case 1:
             return (
                 <div className="div">
                     <h5 className="mb-4">You can also us reach us at :</h5>
                     <div className="contant-info mb-4">
                         <ul className="">
-                            <li className=""><span>Address: </span>No 18 Fagbuaro lane,adebayo,ado ekiti.</li>
+                            <li><span>Headquarters: </span>No.1 JayTee Ojo Crescent, Off Okemesi Road, Ikoro Ekiti, Ekiti State</li>
+                            <li><span>Lagos Office: </span>24, Ogunnaike Street, Shangisha, Magodo, Lagos State</li>
                             <li className="mail"><span>Email: </span><a href="mailto:contact@alluvium.net"> contact@alluvium.net</a></li>
                             <li className=""><span>Phone: </span><a href="tel:+2349037550786"> +2349037550786</a></li>
                         </ul>
+                        {/* <ul className="">
+                            <li className=""><span>Address: </span>No 18 Fagbuaro lane,adebayo,ado ekiti.</li>
+                        </ul> */}
                     </div>
-                    
+
                     <Socialmedia />
                 </div>
             )
         // break;
         case 2:
             return (
-        
+
                 <div className="div">
                     <h5 className="mb-4">Official Hours</h5>
                     <div className="contant-info mb-4">
@@ -40,25 +44,28 @@ const Content = ({name} : {name:number}) => {
         case 3:
             return (
                 <div className="div">
-                    <h5 className="mb-4">Mailing Address</h5>
+                    {/* <h5 className="mb-4">Mailing Address</h5> */}
+                    <h5 className="mb-4">Addresses</h5>
                     <div className="contant-info mb-4">
                         <ul className="">
-                            <li className=""><span>Address: </span>No 18 Fagbuaro lane,adebayo,ado ekiti.</li>
+                            <li><span>Headquarters: </span>No.1 JayTee Ojo Crescent, Off Okemesi Road, Ikoro Ekiti, Ekiti State</li>
+                            <li><span>Lagos Office: </span>24, Ogunnaike Street, Shangisha, Magodo, Lagos State</li>
+                            {/* <li className=""><span>Address: </span>No 18 Fagbuaro lane,adebayo,ado ekiti.</li> */}
                         </ul>
                     </div>
                 </div>
             )
         // break;
         default:
-        return (
-            <div className="empty"></div>
-        )
+            return (
+                <div className="empty"></div>
+            )
     }
-    
+
 }
 
 Content.propTypes = {
-    name : PropTypes.number,
+    name: PropTypes.number,
 }
 
 export default Content;

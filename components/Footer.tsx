@@ -16,13 +16,13 @@ const Footer = () => {
                                 <li><span>Lagos Office: </span>24, Ogunnaike Street, Shangisha, Magodo, Lagos State</li>
                             </ul>
                             {/* </li> */}
-                            <li className=""><span>Email:</span><a href="mailto:university@alluvium.net"> university@alluvium.net</a></li>
+                            <li className=""><span>Email:</span><a href="mailto:contact@alluvium.net"> contact@alluvium.net</a></li>
                             <li className=""><span>Phone:</span><a href="tel:+234+2349037550786"> +2349037550786</a></li>
                         </ul>
 
                         <h5>Follow Us:</h5>
                         <ul className="footer-social" style={{display: 'flex'}}>
-                            {/* <li className=""><a href="https://twitter.com/alluviumhq?s=08" rel="noreferrer" target="_blank"><img src="https://alluvium.net/assets/socials/twitter.svg" alt="twitter"/></a></li> */}
+                            <li className=""><a href="https://twitter.com/alluviumuni" rel="noreferrer" target="_blank"><img src="https://alluvium.net/assets/socials/twitter.svg" alt="twitter"/></a></li>
                             {/* <li className=""><a href="https://www.facebook.com/alluviumhq/?ti=as" rel="noreferrer" target="_blank"><img src="https://alluvium.net/assets/socials/facebook.svg" alt="facebook"/></a></li> */}
                             <li className=""><a href="https://www.linkedin.com/company/alluvium-university/" rel="noreferrer" target="_blank"><img src="https://alluvium.net/assets/socials/linkedin.svg" alt="linkedin"/></a></li>
                             <li className=""><a href="https://www.instagram.com/alluvium_university/" rel="noreferrer" target="_blank"><img src="https://alluvium.net/assets/socials/instagram.svg" alt="Instagram"/></a></li>

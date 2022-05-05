@@ -14,7 +14,7 @@ const MainContent: NextComponentType = () => {
         <div>
             <div className={styles.titleSection}>
                 <h2 className="">Students Resources</h2>
-                <p>Below are frequently-used links for incoming and current students. If you&apos;d like to request a link be added, please send an email to <a className="text-primary text-decoration-underline" href="mailto:university@alluvium.net">university@alluvium.net</a>.</p>
+                <p>Below are frequently-used links for incoming and current students. If you&apos;d like to request a link be added, please send an email to <a className="text-primary text-decoration-underline" href="mailto:contact@alluvium.net">contact@alluvium.net</a>.</p>
             </div>
             <div className={styles.contentSection}>
                 <h3>Popular Links</h3>
@@ -80,7 +80,7 @@ const SideBar: NextComponentType = () => {
             <div className={styles.sideFooter}>
                 <h5>Follow Us:</h5>
                 <ul className="" style={{ display: 'flex' }}>
-                    {/* <li className=""><a href="https://twitter.com/alluviumhq?s=08" rel="noreferrer" target="_blank"><Image loading="eager" width={31.8} height={31.8} src="/images/socials/twitter.svg" alt="twitter" /></a></li> */}
+                    <li className=""><a href="https://twitter.com/alluviumuni" rel="noreferrer" target="_blank"><Image loading="eager" width={31.8} height={31.8} src="/images/socials/twitter.svg" alt="twitter" /></a></li>
                     {/* <li className=""><a href="https://www.facebook.com/alluviumhq/?ti=as" rel="noreferrer" target="_blank"><Image loading="eager" width={31.8} height={31.8} src="/images/socials/facebook.svg" alt="facebook" /></a></li> */}
                     <li className=""><a href="https://www.linkedin.com/company/alluvium-university/" rel="noreferrer" target="_blank"><Image loading="eager" width={31.8} height={31.8} src="/images/socials/linkedin.svg" alt="linkedin" /></a></li>
                     <li className=""><a href="https://www.instagram.com/alluvium_university/" rel="noreferrer" target="_blank"><Image loading="eager" width={31.8} height={31.8} src="/images/socials/instagram.svg" alt="Instagram" /></a></li>
