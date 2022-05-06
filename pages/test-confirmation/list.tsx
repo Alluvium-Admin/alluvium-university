@@ -25,7 +25,7 @@ const OnboardingList = () => {
     const [loading, setLoading] = useState(true);
     const [access, setAccess] = useState(false);
     // const [password, setPassword] = useState<string>(null);
-    
+
     const headers = [
         { label: 'Full Name', key: 'fullname' },
         { label: 'First Name', key: 'firstname' },
@@ -44,8 +44,8 @@ const OnboardingList = () => {
 
     useEffect(() => {
         // if(!password){
-            const password = prompt("Enter Password");
-            // setPassword(tempPassword)
+        const password = prompt("Enter Password");
+        // setPassword(tempPassword)
         // }
         setData(null);
         setUsersInfo(null);
@@ -111,14 +111,14 @@ const OnboardingList = () => {
             <main id={styles.main}>
                 <div className={styles.header}>
                     <div>
-                        {/* <Image
+                        <Image
                             priority
                             alt="Alluvium university logo"
-                            src="/assets/AULogoWhite.svg"
+                            src="/images/AULogoWhyte.svg"
                             quality={100}
                             height={74}
                             width={79.69}
-                        /> */}
+                        />
                     </div>
                     <div><h1>Onboarding List</h1></div>
                 </div>
@@ -136,8 +136,17 @@ const OnboardingList = () => {
                 {
                     (access && usersInfo) && (
                         <>
+                            {printData &&
+                                <div className="container">
+                                    <div className="ms-auto" style={{width: 'max-content'}}>
+                                        <CSVLink data={printData} className='' headers={headers} filename="Test-Availability.csv">
+                                            <button className="btn btn-primary text-decoration-none">Download Data</button>
+                                        </CSVLink>
+                                    </div>
+                                </div>
+                            }
                             <div className={styles.tableHolder}>
-                                <table>
+                                <table className="mx-auto">
                                     <thead>
                                         <tr>
                                             <th>#</th>
@@ -169,13 +178,7 @@ const OnboardingList = () => {
                         </>
                     )
                 }
-            {printData && 
-            <div className="container px-5">
-                <CSVLink data={printData} headers={headers} filename="Test-Availability.csv">
-                <button className="btn btn-primary text-decoration-none">Download Data</button>
-            </CSVLink>
-            </div>
-            }
+
             </main>
         </div>
     );
