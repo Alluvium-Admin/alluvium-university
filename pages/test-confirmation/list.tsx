@@ -32,12 +32,12 @@ const OnboardingList = () => {
         { label: 'Last Name', key: 'lastname' },
         { label: 'Email', key: 'email' },
         { label: 'Time', key: 'time' },
-        { label: 'Date', key: 'date' },
+        { label: 'Date', key: 'day' },
     ]
 
     useEffect(() => {
         if (usersInfo) {
-            const tempData = usersInfo.map(({ date, email, firstname, fullname, lastname, time }) => ({ date, email, firstname, fullname, lastname, time }))
+            const tempData = usersInfo.map(({ date, email, firstname, fullname, lastname, time }) => ({ day: date, email, firstname, fullname, lastname, time }))
             setPrintData(tempData);
         }
     }, [usersInfo])
