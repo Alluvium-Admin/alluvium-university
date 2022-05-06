@@ -1,19 +1,52 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from '../../styles/list.module.scss'
+import { CSVLink } from 'react-csv';
 import Navigation from "../../components/nav";
 // import { productData } from "data";
 import { useState, useRef, useEffect } from 'react';
 // import { connectToDatabase, saveToDB } from "lib/mongo";
 import axios from 'axios'
 
+type IUSER = {
+    fullname?: string;
+    firstname?: string;
+    lastname?: string;
+    email?: string;
+    time?: string;
+    date?: string;
+    [key: string]: any
+}
+
 const OnboardingList = () => {
     const [data, setData] = useState(null);
-    const [usersInfo, setUsersInfo] = useState(null);
+    const [printData, setPrintData] = useState<IUSER[]>(null);
+    const [usersInfo, setUsersInfo] = useState<IUSER[]>(null);
     const [loading, setLoading] = useState(true);
     const [access, setAccess] = useState(false);
+    // const [password, setPassword] = useState<string>(null);
+    
+    const headers = [
+        { label: 'Full Name', key: 'fullname' },
+        { label: 'First Name', key: 'firstname' },
+        { label: 'Last Name', key: 'lastname' },
+        { label: 'Email', key: 'email' },
+        { label: 'Time', key: 'time' },
+        { label: 'Date', key: 'date' },
+    ]
 
     useEffect(() => {
+        if (usersInfo) {
+            const tempData = usersInfo.map(({ date, email, firstname, fullname, lastname, time }) => ({ date, email, firstname, fullname, lastname, time }))
+            setPrintData(tempData);
+        }
+    }, [usersInfo])
+
+    useEffect(() => {
+        // if(!password){
+            const password = prompt("Enter Password");
+            // setPassword(tempPassword)
+        // }
         setData(null);
         setUsersInfo(null);
         setLoading(true);
@@ -30,7 +63,6 @@ const OnboardingList = () => {
                 setData({ message: err.response.data.message, success: false })
                 setLoading(false);
             });
-        const password = prompt("Enter Password");
         if (password !== "alluviumhq123") {
             alert('Wrong Password');
             setAccess(false);
@@ -46,18 +78,18 @@ const OnboardingList = () => {
 
     const deleteUser = async (id) => {
         await axios.delete(`/api/availability/${id}`)
-                .then(res => {
-                    // console.log(res);
-                    setUsersInfo(prev=>prev.filter(user=>user._id !== id));
-                    setData(res.data);
-                    setLoading(false);
-                })
-                .catch(err => {
-                    // console.log(err);
-                    // setUsersInfo(null);
-                    setData({ message: err.response.data.message, success: false })
-                    setLoading(false);
-                });
+            .then(res => {
+                // console.log(res);
+                setUsersInfo(prev => prev.filter(user => user._id !== id));
+                setData(res.data);
+                setLoading(false);
+            })
+            .catch(err => {
+                // console.log(err);
+                // setUsersInfo(null);
+                setData({ message: err.response.data.message, success: false })
+                setLoading(false);
+            });
     }
 
 
@@ -95,7 +127,7 @@ const OnboardingList = () => {
                         <div className={`${styles.response} ${data ? (data.success ? styles.success : styles.danger) :
                             ''}`}>
                             <div className={`${styles.responseData} ${data ? (data.success ? styles.successBG : styles.dangerBG) : ''}`}>
-                            <h3>{loading ? 'Loading...' : data.message}</h3> <button onClick={() => setData(null)}>x</button>
+                                <h3>{loading ? 'Loading...' : data.message}</h3> <button onClick={() => setData(null)}>x</button>
                             </div>
                         </div>
                     )
@@ -127,7 +159,7 @@ const OnboardingList = () => {
                                                     <td>{user.time}</td>
                                                     <td>{user.date}</td>
                                                     <td>{user.createdAt}</td>
-                                                    <td><button onClick={()=>deleteUser(user._id)}>Delete</button></td>
+                                                    <td><button onClick={() => deleteUser(user._id)}>Delete</button></td>
                                                 </tr>
                                             ))
                                         }
@@ -137,6 +169,13 @@ const OnboardingList = () => {
                         </>
                     )
                 }
+            {printData && 
+            <div className="container px-5">
+                <CSVLink data={printData} headers={headers} filename="Test-Availability.csv">
+                <button className="btn btn-primary text-decoration-none">Download Data</button>
+            </CSVLink>
+            </div>
+            }
             </main>
         </div>
     );
