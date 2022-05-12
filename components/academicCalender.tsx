@@ -19,7 +19,7 @@ const AcademicCalender = () => {
                     </tr>
                     <tr style={{borderBottom: '1px solid #BCBCBC'}}>
                         <td className="col-6 p-3 fw-bold">Internship → 24 months</td>
-                        <td className="col-6 p-3" style={{borderLeft: '1px solid #BCBCBC'}}><p>After a 12 months full of adventures and real-time success, you are to graduate into an <span className="fw-bold">Alluvium Intern</span> who is capable of handling customer accounts with oversight and support. At this point, you shall demonstrate your technical knowledge and most business/management/consultancy skills required to meet Alluviums' customer requirements and you will be able lead your teammates.</p></td>
+                        <td className="col-6 p-3" style={{borderLeft: '1px solid #BCBCBC'}}><p>After a 12 months full of adventures and real-time success, you are to graduate into an <span className="fw-bold">Alluvium Intern</span> who is capable of handling customer accounts with oversight and support. At this point, you shall demonstrate your technical knowledge and most business/management/consultancy skills required to meet Alluviums&apos; customer requirements and you will be able lead your teammates.</p></td>
                     </tr>
                     <tr style={{borderBottom: '1px solid #BCBCBC'}}>
                         <td className="col-6 p-3 fw-bold">Traineeship → 3 months</td>
