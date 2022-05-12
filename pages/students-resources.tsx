@@ -1,15 +1,21 @@
 import type { NextPage, NextComponentType } from "next";
+import { useState, Dispatch, SetStateAction } from 'react';
 import Layout from "../components/layout/layout";
 // import { useState } from "react";
 import Head from "next/head";
+import Breadcrumb from "../components/Breadcrumb";
 import Banner from "../components/Banner";
 import styles from "../styles/students-resources.module.scss";
 import Navigation from "../components/nav";
 import Footer from "../components/Footer";
+import AcademicCalender from '../components/academicCalender';
+import {CurriculumModal} from '../components/modal';
 import Link from "next/link";
 import Image from 'next/image';
 
-const MainContent: NextComponentType = () => {
+const MainContent = ({setShowModal, showModal}: {setShowModal: Dispatch<SetStateAction<boolean>>, showModal: boolean}) => {
+    
+    
     return (
         <div>
             <div className={styles.titleSection}>
@@ -42,7 +48,7 @@ const MainContent: NextComponentType = () => {
                             <Image loading="eager" width={104} height={104} src="/images/students/calender.png" />
                         </div>
                         <div className="ps-md-4">
-                            <h4><a href="#">Academic Calendar</a></h4>
+                            <h4 onClick={()=>setShowModal(true)} style={{cursor: 'pointer'}}>Academic Calendar</h4>
                             <p>Currents students can login into their students&apos; account</p>
                         </div>
                     </div>
@@ -92,7 +98,8 @@ const SideBar: NextComponentType = () => {
 
 const Students: NextPage = () => {
     // const [currentView, setCurrentView] = useState('overview');
-
+    const [showModal, setShowModal] = useState<boolean>(false);
+    
     return (
         <Layout head pageTitle="Students Resources" className={styles.container}>
                 {/* <Head>
@@ -106,6 +113,7 @@ const Students: NextPage = () => {
                 </Head> */}
     
                 <main className={styles.main}>
+                        <CurriculumModal body={<AcademicCalender />} showModal={showModal} setShowModal={setShowModal} />
                     <section className="z-10">
                         <Navigation />
                     </section>
@@ -117,7 +125,9 @@ const Students: NextPage = () => {
                             </div>
                         </div> */}
                     </section>
-                    <section>
+                    <Breadcrumb title="Students Resources" />
+                    {/*Breadcrumb*/}
+                    {/* <section>
                         <div className={`container-fluid ps-3 ps-md-5 ${styles.breadcrumbs}`}>
                             <div>
                                 <Link href="/">
@@ -129,11 +139,11 @@ const Students: NextPage = () => {
                                 </Link>
                             </div>
                         </div>
-                    </section>
+                    </section> */}
                     <section className="py-2 mb-5">
                         <div className="container-fluid container-sm px-2 mx-auto row pb-5 py-md-5">
                             <div className="col-sm-9 p-0 pe-md-4 mb-5 mb-md-0">
-                                <MainContent />
+                                <MainContent setShowModal={setShowModal} showModal={showModal} />
                             </div>
                             <div className="col-sm-3">
                                 <SideBar />

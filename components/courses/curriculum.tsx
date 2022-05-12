@@ -2,7 +2,7 @@ import { MandatoryCourses } from "./mandatory-courses";
 import { ElectiveCourses } from "./elective-courses";
 
 export interface ICurriculumModal {
-  header: any;
+  header?: any;
   body: any;
   footer?: any;
 }

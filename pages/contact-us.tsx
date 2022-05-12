@@ -1,4 +1,6 @@
 import type { NextPage } from "next";
+import type { ChangeEvent, ChangeEventHandler } from "react";
+import axios from "axios";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Navigation from "../components/nav";
@@ -6,10 +8,35 @@ import Footer from "../components/Footer";
 import Texthero from "../components/Texthero";
 import Breadcrumb from "../components/Breadcrumb";
 import Form from "../components/contact/Form";
+import { useState, useEffect } from "react";
 import Card from "../components/contact/Card";
 import Content from "../components/contact/Content";
 
-const Home: NextPage = () => {
+const Home = () => {
+  const [data, setData] = useState<{ [key: string]: string }>(null);
+  const [url, setUrl] = useState<string>(null);
+  const MainUrl = 'https://forms.zohopublic.com/admin1711/form/ContactUs/formperma/ywG1UqqTEfcSggqvjWrl_fTDGN6tS6l8KxBzlvUhZUU';
+
+  useEffect(() => {
+    if (data !== null) {
+      const { firstname, lastname, email, message } = data;
+      setUrl(`${MainUrl}?firstname=${firstname}&lastname=${lastname}&email=${email}&message=${message}`)
+    }
+  }, [data])
+
+  const handleInput = (e) => {
+    const { name, value } = e.target;
+    setData(prev => prev ? ({ ...prev, [name]: value }) : ({ [name]: value }))
+    console.log(value)
+  }
+
+  const handleSubmit = async e => {
+    e.preventDefault();
+    await axios.get(MainUrl)
+      .then(res => console.log(res.data))
+      .catch(err => console.log(err))
+  }
+
   return (
     <div className={styles.container}>
       <Head>
@@ -31,8 +58,8 @@ const Home: NextPage = () => {
           <h2>Reach Out to Alluvium University</h2>
           <div className="row my-4">
             <div className="col-md-8">
-              <iframe frameBorder="0" className={styles.contactus} src='https://forms.zohopublic.com/admin1711/form/ContactUs/formperma/ywG1UqqTEfcSggqvjWrl_fTDGN6tS6l8KxBzlvUhZUU'></iframe>
-              {/* <Form /> */}
+              {/* <iframe frameBorder="0" className={styles.contactus} src='https://forms.zohopublic.com/admin1711/form/ContactUs/formperma/ywG1UqqTEfcSggqvjWrl_fTDGN6tS6l8KxBzlvUhZUU'></iframe> */}
+              <Form handleInput={handleInput} handleSubmit={handleSubmit} />
             </div>
             <div className="col-md-4">
               <Card content={<Content name={1} />} />

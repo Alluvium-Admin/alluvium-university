@@ -2,6 +2,7 @@ import type { NextPage, NextComponentType } from "next";
 import Layout from "../components/layout/layout";
 import { useState } from "react";
 import Head from "next/head";
+import Breadcrumb from "../components/Breadcrumb";
 import styles from "../styles/who-we-are.module.scss";
 import Banner from "../components/Banner";
 import Navigation from "../components/nav";
@@ -77,7 +78,9 @@ const Home: NextPage = () => {
                         </div>
                     </div> */}
                 </section>
-                <section>
+                <Breadcrumb title="Who we are" />
+                {/* Breadcrumb */}
+                {/* <section>
                     <div className={`container-fluid ps-3 ps-md-5 ${styles.breadcrumbs}`}>
                         <div>
                             <Link href="/">
@@ -89,7 +92,7 @@ const Home: NextPage = () => {
                             </Link>
                         </div>
                     </div>
-                </section>
+                </section> */}
                 <section className="py-2">
                     <div className="container-fluid container-sm px-2 mx-auto row pb-5 py-md-5">
                         <div className="col-sm-3 p-0 pe-md-4 mb-5 mb-md-0">
