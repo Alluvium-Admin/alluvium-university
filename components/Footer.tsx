@@ -57,7 +57,7 @@ const Footer = () => {
             </div>
             <div className="footer-copyright pb-1 pt-3">
                 <div className="container">
-                    <p>&copy; {new Date().getFullYear()} Alluvium University | <a href="" >Privacy Policy</a> </p>
+                    <p>&copy; {new Date().getFullYear()} Alluvium University | <a href="./privacy_policy" >Privacy Policy</a> </p>
                 </div>
             </div>
         </footer>

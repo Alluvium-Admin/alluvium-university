@@ -111,6 +111,8 @@ footer {
 	width: 100%;
 	overflow: hidden;
 }
+
+
 @media screen and (max-width: 576px) {
 	.testimonial{
 		padding: 10px 0 !important;
