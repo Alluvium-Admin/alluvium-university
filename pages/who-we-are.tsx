@@ -17,11 +17,11 @@ const MissionVission: NextComponentType = () => {
             </div>
             <div className={styles.contentSection}>
                 <h3>Mission Statement:</h3>
-                <p>Get to No.1 Atlassian Engineer supplier with Equal Opportunities for All young people regardless of their background, race or gender</p>
+                <p>At Alluvium, our mission is to deliver as the No.1 Atlassian Engineer supplier with Equal Opportunities for all young people regardless of their background, race or gender.</p>
             </div>
             <div className={styles.contentSection}>
                 <h3>Vision Statement:</h3>
-                <p>To set the highest standards for Atlassian Tools Engineering and Migrations by raising the Best Engineers and therefore becoming the No.1 supplier of Atlassian Engineers in the world</p>
+                <p>To set the highest standards for Atlassian Tools Engineering and Migrations by training the Best Engineers and therefore becoming the No.1 supplier of Atlassian Engineers in the world</p>
             </div>
             <div className={styles.contentSection}>
                 <h3>Our Core Values:</h3>

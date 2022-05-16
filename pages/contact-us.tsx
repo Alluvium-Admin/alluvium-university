@@ -32,7 +32,7 @@ const Home = () => {
 
   const handleSubmit = async e => {
     e.preventDefault();
-    await axios.get(MainUrl)
+    await axios.get(MainUrl, { headers: { 'Access-Control-Allow-Origin': '*'}})
       .then(res => console.log(res.data))
       .catch(err => console.log(err))
   }
@@ -58,8 +58,8 @@ const Home = () => {
           <h2>Reach Out to Alluvium University</h2>
           <div className="row my-4">
             <div className="col-md-8">
-              {/* <iframe frameBorder="0" className={styles.contactus} src='https://forms.zohopublic.com/admin1711/form/ContactUs/formperma/ywG1UqqTEfcSggqvjWrl_fTDGN6tS6l8KxBzlvUhZUU'></iframe> */}
-              <Form handleInput={handleInput} handleSubmit={handleSubmit} />
+              <iframe frameBorder="0" className={styles.contactus} src='https://forms.zohopublic.com/admin1711/form/ContactUs/formperma/ywG1UqqTEfcSggqvjWrl_fTDGN6tS6l8KxBzlvUhZUU'></iframe>
+              {/* <Form handleInput={handleInput} handleSubmit={handleSubmit} /> */}
             </div>
             <div className="col-md-4">
               <Card content={<Content name={1} />} />
