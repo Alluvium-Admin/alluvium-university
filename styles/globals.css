@@ -156,6 +156,7 @@ a {
 .testimonial-img{
 	position: absolute;
 	top: 27px;
+	background-color: white;
 	right: -100px;
 	z-index: 9;
 	min-height: 350px;
@@ -165,6 +166,7 @@ a {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+	border: 20px solid black;
 }
 
 .testimonial .testimonial-img .svg{
