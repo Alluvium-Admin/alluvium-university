@@ -5,7 +5,7 @@ import { FaAngleDown, FaCheck } from 'react-icons/fa';
 import Layout from '../components/layout/layout';
 import Navigation from '../components/nav';
 import Footer from '../components/Footer';
-import Link from 'next/link';
+// import Link from 'next/link';
 
 const data = {
     'what we ask': [
@@ -43,7 +43,7 @@ const data = {
             ]
         },
         {
-            title: 'Jira management',
+            title: 'Jira Management',
             content: 'Complete the Jira fundamentals using the link below',
             links: [
                 {
@@ -57,7 +57,7 @@ const data = {
             ]
         },
         {
-            title: 'confluence management',
+            title: 'Confluence Management',
             content: 'Complete the confluence management using the below',
             links: [
                 {
@@ -84,8 +84,10 @@ const Welcome: NextPage = () => {
                         <div className={`col-sm-6 col-lg-7 ${styles.welcomeText}`}>
                             <h1>Welcome to</h1>
                             <h1 className={styles.universityText}>Alluvium University</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
-                            <button className={`btn ${styles.getStarted}`}>Get Started</button>
+                            {/* <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p> */}
+                            <a href="#steps" className='text-decoration-none'>
+                                <button className={`btn ${styles.getStarted}`}>Get Started</button>
+                            </a>
                         </div>
                         <div className="col-sm-6 col-lg-4 justify-content-right">
                             <Image
@@ -100,12 +102,12 @@ const Welcome: NextPage = () => {
                             <a href='#message' title='next section'><FaAngleDown /></a>
                         </div>
                     </section>
-                    <section id='message' className="container-fluid text-center py-5 p-md-5 text-white" style={{ background: '#132230' }}>
+                    {/* <section id='message' className="container-fluid text-center py-5 p-md-5 text-white" style={{ background: '#132230' }}>
                         <div className={`${styles.messagebox} my-5 px-md-5`}>
                             <h2 className='mx-md-5 px-md-5 mb-4'>You are Officially Welcomed to Alluvium University</h2>
                             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
                         </div>
-                    </section>
+                    </section> */}
                     <section className={styles.whatweask}>
                         <div className={`row align-items-center my-5 py-5`}>
                             <div className="col-md-6">
@@ -154,7 +156,7 @@ const Welcome: NextPage = () => {
                             </div>
                         </div>
                     </section>
-                    <section className={styles.steps}>
+                    <section id='steps' className={styles.steps}>
                         <h2 className='text-center'><span>Onboarding</span> Steps</h2>
                         <div className="row">
                             {
