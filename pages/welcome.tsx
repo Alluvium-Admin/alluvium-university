@@ -69,7 +69,7 @@ const data = {
     ]
 }
 
-const KeyFacts: NextPage = () => {
+const Welcome: NextPage = () => {
 
     const getImageSrc = (title: string) => {
         return `/images/key-facts/${title.toLowerCase()}.png`
@@ -77,7 +77,7 @@ const KeyFacts: NextPage = () => {
 
     return (
         <>
-            <Layout head pageTitle='Key Facts'>
+            <Layout head pageTitle='Welcome' description=''>
                 <Navigation />
                 <div className="container-fluid p-0">
                     <section className="container row py-md-5 my-md-3 px-md-5 justify-content-between align-items-center mx-auto">
@@ -206,4 +206,4 @@ const KeyFacts: NextPage = () => {
     )
 }
 
-export default KeyFacts;
+export default Welcome;
