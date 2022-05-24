@@ -7,8 +7,10 @@ import Script from 'next/script';
 
 function MyApp({ Component, pageProps }) {
   return (<>
-    <Component {...pageProps} />
-    <Script src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js' />
+    <div className="container-fluid p-0 m-0">
+      <Component {...pageProps} />
+      <Script src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js' />
+    </div>
   </>
   )
 }
