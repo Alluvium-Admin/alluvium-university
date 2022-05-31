@@ -19,7 +19,8 @@ const data = {
         { title: 'Employment', content: 'You are employed from day 1', width: 40, height: 73.54 },
         { title: 'Training', content: 'Equipments and Training', width: 56, height: 50.11 },
         { title: 'Bonus', content: 'No cap on how much you can earn with bonuses', width: 56, height: 55.8 },
-        { title: 'Earning', content: 'You start earning from N50,000 per month', width: 56, height: 56.01 }
+        { title: 'Earning', content: 'You start earning from N50,000 per month', width: 56, height: 56.01 },
+        { title: 'Accomodation', content: 'You start earning from N50,000 per month', width: 56, height: 56.01 }
     ],
     staps: [
         {
@@ -138,14 +139,13 @@ const Welcome: NextPage = () => {
                             <div className="row mt-5 mt-lg-0">
                                 {
                                     data['what we offer'].map((value, index) =>
-                                        <div className="col-md-6 col-lg-3 mb-2 mb-md-0" key={index}>
+                                        <div className="col-md-6 col-lg-4 mb-2 mb-md-0" key={index}>
                                             <div style={{ height: '80px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                                                 <Image
                                                     src={getImageSrc(value.title)}
                                                     width={value.width}
                                                     height={value.height}
-                                                    alt='what we ask'
-                                                    loading='eager'
+                                                    alt={value.title}                                                    loading='eager'
                                                     priority />
                                             </div>
                                             <h3>{value.title}</h3>
